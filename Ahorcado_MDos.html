@@ -1,0 +1,309 @@
+<html>
+<head>
+	<title>MODULE TWO</title>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+      <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="js/skel.min.js"></script>
+      <script src="js/skel-panels.min.js"></script>
+      <script src="js/init.js"></script>
+      <noscript>
+         <link rel="stylesheet" href="css/skel-noscript.css" />
+         <link rel="stylesheet" href="css/style.css" />
+         <link rel="stylesheet" href="css/style-desktop.css" />
+      </noscript>
+      <TITLE>Juego Nuevo</TITLE>
+<SCRIPT LANGUAGE=JavaScript>
+var hombre = new Array("___\n", "   |\n", "   O\n", "  /", "|", "\\\n", "  /", " \\\n", "___") //  arrego para el muñeco 
+var palabra
+var libreriaPalabras = new Array("d o g", "C a t", " c o w", "h o r s e", "d o n k e y",
+"p i g", "r a b b i t", "	e l e p h a n t", "s q u i r r e l", "c h i c k e n ",
+"g o o s e", "g i r a f f e", "c a m e l", "w o l f", "l i o n",
+"p a r r o t", "m o n k e y", "e w e", "t u r k e y", "d u c k",
+"t i g e r", "b u l l", "b e a r", "b e e",
+"w h a l e", "g o a t", "s h e e p","f r o g")
+var partes = 0
+var colNueva = 0
+var jugando
+function ObtienePalabra() { // para que las palabras salgo alazar 
+   //obtiene la palabra para jugar de forma pseudoaleatoria
+   var indice = Math.round ( Math.random() * 28)  
+   var cadena = new String( libreriaPalabras[indice] )
+   palabra = cadena.split(" ")
+   }
+function DibujaHombre(visor, partes) {  //para matar al amuñeco 
+   //dibuja el hombre ahorcado
+   //partes indica el numero de partes a dibujar
+   var dibujo = ""
+   if (partes < 10)
+      for(var x = 0; x < partes; x++) {
+         dibujo += hombre[x]
+      }
+   visor.displayHombre.value = dibujo
+}
+function DibujaLetra(visor, letra) {
+   //dibuja una letra de la palabra
+   //posicion indica donde debe dibujar la letra
+   var flag = false 
+   //indica si se encontro la letra 
+   //obtiene cadena actual
+   var cadena = new String(visor.displayPalabra.value)
+   //la separa en sus espacios
+   var letrasCadena = cadena.split(" ")
+   cadena = "" 
+   for (var x = 0; x < palabra.length; x++) {
+      if (palabra[x] == letra) {
+         cadena += letra + " "
+         flag = true
+      } else
+         cadena += letrasCadena[x] + " "
+   }
+   visor.displayPalabra.value = cadena
+   return flag
+}
+function NuevaLetra(visor, letra) {
+   //añade letra lista de letras
+   visor.displayLetras.value += letra + " "
+   //comprueba si ha de pasar a la siguiente fila
+   if(colNueva == 3) {
+      visor.displayLetras.value += "\n"
+      colNueva = 0
+   } else
+      colNueva++
+}
+
+
+function Juega(visor, letra) {
+   //comprueba si esta jugando
+   if (jugando) {
+      //ciclo de jugada
+      //1. añade letra a la lista
+      NuevaLetra(visor, letra)
+      //2. dibuja la letra y comprueba si acierto
+      var acierto = DibujaLetra(visor, letra)
+      //3. si no acierto, dibuja hombre
+      if (!acierto)
+         DibujaHombre(visor, ++partes)
+      //4. comprueba si fin
+      if (partes == 9)
+         FinJuego(false)
+      else if (CompruebaPalabra(visor))
+         FinJuego(true)
+      } else {
+         alert('Press new game \n to start.')
+   }
+}
+
+function IniciaJuego(visor) {
+   //inicializa visor y variables globales
+   jugando = true
+   partes = 0
+   colNueva = 0
+   ObtienePalabra()
+   DibujaHombre(visor, partes)
+   visor.displayPalabra.value = ""
+   for (var x = 0; x < palabra.length; x++)
+      visor.displayPalabra.value += "_ "
+   visor.displayLetras.value = ""
+}
+
+function CompruebaPalabra(visor) {
+   //comprueba si se completo toda la palabra
+   var fin = true
+   //obtiene cadena actual
+   var cadena = new String(visor.displayPalabra.value)
+   //la separa en sus espacios
+   var letrasCadena = cadena.split(" ")
+   for(var x = 0; x < letrasCadena.length; x++)
+      if (letrasCadena[x] == "_")
+         fin = false
+   return fin
+}
+
+
+function FinJuego(resultado) {
+   //indica que si se ha perdido o ganado
+   var solucion = ""
+   jugando = false 
+   if (resultado) {
+      document.visor.ganadas.value++
+      alert("Good Job!")
+   } else {
+     document.visor.perdidas.value++
+     //construye la palabra solucion
+     for (var x = 0; x < palabra.length; x++)
+        solucion += palabra[x]
+     alert("You died !\n The word was: " + solucion)
+   }
+}
+</SCRIPT>
+	</head>
+	<body>
+
+		<!-- Header -->
+		<div id="header">
+			<div class="container"> 
+				
+				<!-- Logo -->
+				<div id="logo">
+					<h1><a href="#">ENGLISH</a></h1>
+					<span>MODULE TWO</span>
+               <span>Hangman Game</span>
+               <span>The animals</span>
+				</div>
+				
+				<!-- Nav -->
+				<nav id="nav">
+               <ul>
+                  <li><a href="..\proyecto\index.html">Homepage</a></li>
+                  <li ><a href="..\proyecto\modulo1.html">Module One</a></li>
+                  <li class="active"><a href="..\proyecto\modulo2.html">Module Two</a></li>
+                  <li><a href="..\proyecto\modulo3.html">Module Three</a></li>
+                  <li><a href="..\proyecto\modulo4.html">Module Four</a></li>
+               </ul>
+            </nav>
+			</div>
+		</div>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="container">
+				<div class="row"> 
+
+					<!-- Sidebar -->
+					<div id="sidebar" class="4u">
+						<section>
+							<header >
+								<h2>GAME</h2>
+							</header>
+							<ul class="style">
+								
+								<li>
+									<p class="posted"></p>
+									<h2>Alphabet Soup</h2>
+									<img src="images/pic02.jpg" alt="" /><br><br><br><br><br><br>
+									<p class="text">This game contains the numbers in English
+									Do you want to look?	</p>
+									<!-- fala-->
+									<p><a href="..\proyecto\my-family\soap2.html">NEW GAME</a></p>
+
+								</li>
+								<li>
+									<p class="posted"></p>
+									<h2>Crossword</h2>
+									<img src="images/pic03.jpg" alt="" /><br><br><br><br><br><br>
+									<p class="text">This game contains the numbers in English
+									Do you want to look?	</p>
+									<p><a href="..\proyecto\hours-and minutes\cross2.html">NEW GAME</a></p>
+								</li>
+								<li>
+									<p class="posted"></p>
+									<h2>For/ Since / ago</h2>
+									<img src="images/pic04.jpg" alt="" /><br><br><br><br><br><br>
+									<p class="text">This game contains the numbers in English
+									Do you want to look?	</p>
+									<p><a href="..\proyecto\Lectura2.html">More Details</a></p>
+								</li>
+							</ul>
+						</section>
+					</div>
+					
+					<!-- Content -->
+					<div id="content" class="8u skel-cell-important">
+						<section>
+							<header>
+								<h2>Hangman Game</h2>
+								<span class="byline"> The animals</span>
+							</header>
+						<H2>GAME </H2>
+						<FORM NAME=visor>
+   <CENTER>
+   <TABLE width=547>
+   <TR>
+      <TD colspan=3 width=150 ALIGN=center><textarea name=displayHombre cols=15 rows=6></textarea>
+      <TD colspan=3 WIDTH=150 ALIGN=center><textarea name=displayLetras cols=15 rows=6></textarea>
+      <TD width=200>
+   <TR>
+      <TD colspan=6 width=300 ALIGN=center><INPUT NAME=displayPalabra SIZE=42>
+      <TD ALIGN=center>&nbsp;
+   <TR>
+      <!--son para  el teclado de las letras-->
+
+      <td align=center width=50><input type=button name=botA value=" A " onClick="Juega(this.form, 'a')"> 
+      
+      <td align=center width=50><input type=button name=botB value=" B " onClick="Juega(this.form, 'b')">
+      <td align=center width=50><input type=button name=botC value=" C " onClick="Juega(this.form, 'c')">
+      <td align=center width=50><input type=button name=botD value=" D " onClick="Juega(this.form, 'd')">
+      <td align=center width=50><input type=button name=botE value=" E " onClick="Juega(this.form, 'e')">
+      <td align=center width=50><input type=button name=botF value=" F " onClick="Juega(this.form, 'f')">
+      <td>
+    <tr>
+      <td align=center><input type=button name=botG value=" G " onClick="Juega(this.form, 'g')">
+      <td align=center><input type=button name=botH value=" H " onClick="Juega(this.form, 'h')">
+      <td align=center><input type=button name=botI value=" I " onClick="Juega(this.form, 'i')">
+      <td align=center><input type=button name=botJ value=" J " onClick="Juega(this.form, 'j')">
+      <td align=center><input type=button name=botK value=" K " onClick="Juega(this.form, 'k')">
+      <td align=center><input type=button name=botL value=" L " onClick="Juega(this.form, 'l')">
+      <td align=right valign=middle>Won: <input type=text name=ganadas size=4 value=0>
+    <tr>
+      <td align=center><input type=button name=botM value=" M " onClick="Juega(this.form, 'm')">
+      <td align=center><input type=button name=botN value=" N " onClick="Juega(this.form, 'n')">
+      <td align=center><input type=button name=botÑ value=" Ñ " onClick="Juega(this.form, 'ñ')">
+      <td align=center><input type=button name=botO value=" O " onClick="Juega(this.form, 'o')">
+      <td align=center><input type=button name=botP value=" P " onClick="Juega(this.form, 'p')">
+      <td align=center><input type=button name=botQ value=" Q " onClick="Juega(this.form, 'q')">
+      <td align=right valign=middle>Losses: <input type=text name=perdidas size=4 value=0>
+    <tr>
+      <td align=center><input type=button name=botR value=" R " onClick="Juega(this.form, 'r')">
+      <td align=center><input type=button name=botS value=" S " onClick="Juega(this.form, 's')">
+      <td align=center><input type=button name=botT value=" T " onClick="Juega(this.form, 't')">
+      <td align=center><input type=button name=botU value=" U " onClick="Juega(this.form, 'u')">
+      <td align=center><input type=button name=botV value=" V " onClick="Juega(this.form, 'v')">
+      <td align=center><input type=button name=botW value=" W " onClick="Juega(this.form, 'w')">
+      <td>
+    <tr>
+      <td align=center><input type=button name=botX value=" X " onClick="Juega(this.form, 'x')">
+      <td align=center><input type=button name=botY value=" Y " onClick="Juega(this.form, 'y')">
+      <td align=center><input type=button name=botZ value=" Z " onClick="Juega(this.form, 'z')">
+      <td colspan=3 align=center><input type=button name=Inicia value="  New Game   " onClick="IniciaJuego(this.form)">
+      <td align=center><input type=button value=CLEAN name=B1 onClick="this.form.ganadas.value='0'; this.form.perdidas.value='0'">
+  </TABLE>
+  </CENTER>
+</FORM>
+						</section>
+                  <div ><h4>THE ANIMALS</h4></div>
+  <img src="..\proyecto\images\ac.jpg" />
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		
+		<!-- Copyright -->
+		<div id="copyright">
+			<div class="container">
+				Pagina 
+			</div>
+		</div>
+
+
+</body>
+</html>

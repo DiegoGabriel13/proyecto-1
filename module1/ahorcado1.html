@@ -1,0 +1,317 @@
+<!DOCTYPE HTML>
+<!--
+	Iridium by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Hangman Game</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+
+		    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+      <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="js/skel.min.js"></script>
+      <script src="js/skel-panels.min.js"></script>
+      <script src="js/init.js"></script>
+      <noscript>
+         <link rel="stylesheet" href="css/skel-noscript.css" />
+         <link rel="stylesheet" href="css/style.css" />
+         <link rel="stylesheet" href="css/style-desktop.css" />
+      </noscript>
+<TITLE>Juego Nuevo</TITLE>
+<SCRIPT LANGUAGE=JavaScript>
+var hombre = new Array("___\n", "   |\n", "   O\n", "  /", "|", "\\\n", "  /", " \\\n", "___")
+var palabra
+var libreriaPalabras = new Array("A p p l e", "p e a c h", "p e a r", "g r a p e s", "m e l o n",
+"p i n e a p p l e", "w a t e r m e l o n", "l e m o n", "s t r a w b e r r y", "b a n a n a",
+"o r a n g e", "a p r i c o t", "b l u e b e r r y", "b l a c k b e r r y", "c a n t a l o u p e",
+"c o c o n u t", "c u r r a n t", "d a t e", "l y c h e e ", "l i m e",
+"h o n e y d e w", "n e c t a r i n e", "p l u m", "r a s p b e r r y")
+var partes = 0
+var colNueva = 0
+var jugando
+
+
+function ObtienePalabra() {
+   //obtiene la palabra para jugar de forma pseudoaleatoria
+   var indice = Math.round ( Math.random() * 24)
+   var cadena = new String( libreriaPalabras[indice] )
+   palabra = cadena.split(" ")
+
+}
+
+
+function DibujaHombre(visor, partes) {
+   //dibuja el hombre ahorcado
+   //partes indica el numero de partes a dibujar
+   var dibujo = ""
+   if (partes < 10)
+      for(var x = 0; x < partes; x++) {
+         dibujo += hombre[x]
+      }
+   visor.displayHombre.value = dibujo
+}
+
+
+function DibujaLetra(visor, letra) {
+   //dibuja una letra de la palabra
+   //posicion indica donde debe dibujar la letra
+   var flag = false 
+   //indica si se encontro la letra 
+   //obtiene cadena actual
+   var cadena = new String(visor.displayPalabra.value)
+   //la separa en sus espacios
+   var letrasCadena = cadena.split(" ")
+   cadena = "" 
+   for (var x = 0; x < palabra.length; x++) {
+      if (palabra[x] == letra) {
+         cadena += letra + " "
+         flag = true
+      } else
+         cadena += letrasCadena[x] + " "
+   }
+   visor.displayPalabra.value = cadena
+   return flag
+}
+
+
+function NuevaLetra(visor, letra) {
+   //añade letra lista de letras
+   visor.displayLetras.value += letra + " "
+   //comprueba si ha de pasar a la siguiente fila
+   if(colNueva == 3) {
+      visor.displayLetras.value += "\n"
+      colNueva = 0
+   } else
+      colNueva++
+}
+
+
+function Juega(visor, letra) {
+   //comprueba si esta jugando
+   if (jugando) {
+      //ciclo de jugada
+      //1. añade letra a la lista
+      NuevaLetra(visor, letra)
+      //2. dibuja la letra y comprueba si acierto
+      var acierto = DibujaLetra(visor, letra)
+      //3. si no acierto, dibuja hombre
+      if (!acierto)
+         DibujaHombre(visor, ++partes)
+      //4. comprueba si fin
+      if (partes == 9)
+         FinJuego(false)
+      else if (CompruebaPalabra(visor))
+         FinJuego(true)
+      } else {
+         alert('Press new game \n to start.')
+   }
+}
+
+function IniciaJuego(visor) {
+   //inicializa visor y variables globales
+   jugando = true
+   partes = 0
+   colNueva = 0
+   ObtienePalabra()
+   DibujaHombre(visor, partes)
+   visor.displayPalabra.value = ""
+   for (var x = 0; x < palabra.length; x++)
+      visor.displayPalabra.value += "_ "
+   visor.displayLetras.value = ""
+}
+
+function CompruebaPalabra(visor) {
+   //comprueba si se completo toda la palabra
+   var fin = true
+   //obtiene cadena actual
+   var cadena = new String(visor.displayPalabra.value)
+   //la separa en sus espacios
+   var letrasCadena = cadena.split(" ")
+   for(var x = 0; x < letrasCadena.length; x++)
+      if (letrasCadena[x] == "_")
+         fin = false
+   return fin
+}
+
+
+function FinJuego(resultado) {
+   //indica que si se ha perdido o ganado
+   var solucion = ""
+   jugando = false 
+   if (resultado) {
+      document.visor.ganadas.value++
+      alert("Good Job!")
+   } else {
+     document.visor.perdidas.value++
+     //construye la palabra solucion
+     for (var x = 0; x < palabra.length; x++)
+        solucion += palabra[x]
+     alert("You died !\n The word was: " + solucion)
+   }
+}
+</SCRIPT>
+	</head>
+
+	<body>
+
+
+		<!-- Header -->
+		<div id="header">
+			<div class="container"> 
+				
+				<!-- Logo -->
+				<div id="logo">
+               <h1><a href="#">ENGLISH</a></h1>
+               <br>
+              
+               <h3><a href="#">Play Hangman Fruits</a></h3>
+               </div>
+				
+				<!-- Nav -->
+				<nav id="nav">
+               <ul>
+                  <li><a href="..\index.html">Homepage</a></li>
+                  <li class="active"><a href="..\modulo1.html">Module One</a></li>
+                  <li><a href="..\modulo2.html">Module Two</a></li>
+                  <li><a href="..\modulo3.html">Module Three</a></li>
+                  <li><a href="..\modulo4.html">Module Four</a></li>
+               </ul>
+            </nav>
+			</div>
+		</div>
+
+		<!-- Main -->
+		<div id="main" >
+			<div class="container">
+				<div class="row"> 
+
+					<!-- Sidebar -->
+					<div id="sidebar" class="4u" background-color:"blue">
+						<section>
+							<header>
+								<h2>Games</h2>
+							</header>
+							<ul class="style">
+                       
+                        <li>
+                           <p class="posted"></p>
+                           <h2>Alphabet Soup</h2>
+                           <img src="images/pic02.jpg" alt="" /><br><br><br><br><br><br>
+                           <p class="text">This game contains the Greetings
+                           Do you want to look? </p>
+                           <p><a href="..\greetings-and farewells\soap1.html">New Game</a></p>
+                        </li>
+                        <li>
+                           <p class="posted"></p>
+                           <h2>Crossword</h2>
+                           <img src="images/pic03.jpg" alt="" /><br><br><br><br><br><br>
+                           <p class="text">This game contains the numbers in English
+                           Do you want to look? </p>
+                           <p><a href="..\the-colors\cross1.html">New Game</a></p>
+                        </li>
+                                             </ul>
+						</section>
+					</div>
+					
+					<!-- Content -->
+					<div id="content" class="8u skel-cell-important">
+						<section>
+							<header>
+								<h2>Hangman Game</h2>
+								<span class="byline">"Try the play the game"</span>
+							</header>
+						<H2>Juego del ahorcado</H2>
+<FORM NAME=visor>
+   <CENTER>
+   <TABLE width=547>
+   <TR>
+      <TD colspan=3 width=150 ALIGN=center><textarea name=displayHombre cols=15 rows=6></textarea>
+      <TD colspan=3 WIDTH=150 ALIGN=center><textarea name=displayLetras cols=15 rows=6></textarea>
+      <TD width=200>
+   <TR>
+      <TD colspan=6 width=300 ALIGN=center><INPUT NAME=displayPalabra SIZE=42>
+      <TD ALIGN=center>&nbsp;
+   <TR>
+      <td align=center width=50><input type=button name=botA value=" A " onClick="Juega(this.form, 'a')">
+      
+      <td align=center width=50><input type=button name=botB value=" B " onClick="Juega(this.form, 'b')">
+      <td align=center width=50><input type=button name=botC value=" C " onClick="Juega(this.form, 'c')">
+      <td align=center width=50><input type=button name=botD value=" D " onClick="Juega(this.form, 'd')">
+      <td align=center width=50><input type=button name=botE value=" E " onClick="Juega(this.form, 'e')">
+      <td align=center width=50><input type=button name=botF value=" F " onClick="Juega(this.form, 'f')">
+      <td>
+    <tr>
+      <td align=center><input type=button name=botG value=" G " onClick="Juega(this.form, 'g')">
+      <td align=center><input type=button name=botH value=" H " onClick="Juega(this.form, 'h')">
+      <td align=center><input type=button name=botI value=" I " onClick="Juega(this.form, 'i')">
+      <td align=center><input type=button name=botJ value=" J " onClick="Juega(this.form, 'j')">
+      <td align=center><input type=button name=botK value=" K " onClick="Juega(this.form, 'k')">
+      <td align=center><input type=button name=botL value=" L " onClick="Juega(this.form, 'l')">
+      <td align=right valign=middle>Won: <input type=text name=ganadas size=4 value=0>
+    <tr>
+      <td align=center><input type=button name=botM value=" M " onClick="Juega(this.form, 'm')">
+      <td align=center><input type=button name=botN value=" N " onClick="Juega(this.form, 'n')">
+      <td align=center><input type=button name=botÑ value=" Ñ " onClick="Juega(this.form, 'ñ')">
+      <td align=center><input type=button name=botO value=" O " onClick="Juega(this.form, 'o')">
+      <td align=center><input type=button name=botP value=" P " onClick="Juega(this.form, 'p')">
+      <td align=center><input type=button name=botQ value=" Q " onClick="Juega(this.form, 'q')">
+      <td align=right valign=middle>Losses: <input type=text name=perdidas size=4 value=0>
+    <tr>
+      <td align=center><input type=button name=botR value=" R " onClick="Juega(this.form, 'r')">
+      <td align=center><input type=button name=botS value=" S " onClick="Juega(this.form, 's')">
+      <td align=center><input type=button name=botT value=" T " onClick="Juega(this.form, 't')">
+      <td align=center><input type=button name=botU value=" U " onClick="Juega(this.form, 'u')">
+      <td align=center><input type=button name=botV value=" V " onClick="Juega(this.form, 'v')">
+      <td align=center><input type=button name=botW value=" W " onClick="Juega(this.form, 'w')">
+      <td>
+    <tr>
+      <td align=center><input type=button name=botX value=" X " onClick="Juega(this.form, 'x')">
+      <td align=center><input type=button name=botY value=" Y " onClick="Juega(this.form, 'y')">
+      <td align=center><input type=button name=botZ value=" Z " onClick="Juega(this.form, 'z')">
+      <td colspan=3 align=center><input type=button name=Inicia value="  New Game   " onClick="IniciaJuego(this.form)">
+      <td align=center><input type=button value=CLEAN name=B1 onClick="this.form.ganadas.value='0'; this.form.perdidas.value='0'">
+  </TABLE>
+  </CENTER>
+  <div ><h4>THE FRUITS</h4></div>
+  <img src="..\images\f4.jpg" />
+
+
+</FORM>
+						</section>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		
+		<!-- Copyright -->
+		<div id="copyright">
+			<div class="container">
+				Pagina 
+			</div>
+		</div>
+		
+	</body>
+</html>

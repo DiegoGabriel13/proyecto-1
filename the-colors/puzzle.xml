@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<CWForgeLiveDoc version="5.5.8" suggestedCWFLVersion="1" puzzleType="Crossword" gridWordCount="9" license="srT">
+<Title tNum="0" align="center">
+<Text>The Colors</Text>
+<Style font="Helvetica" size="18" color="0x000000" bold="" italic="" underline=""/>
+</Title>
+<Locale>
+<Alphabet>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</Alphabet>
+<AcrossText>Across</AcrossText>
+<DownText>Down</DownText>
+<WordSearchLabelText></WordSearchLabelText>
+<AboutCWFLiveText>Powered by Crossword Forge...</AboutCWFLiveText>
+<CreateYourOwnPuzzleText>Want to make crossword puzzles?</CreateYourOwnPuzzleText>
+<InputAlphabetText>Input Alphabet</InputAlphabetText>
+<GameText>Game</GameText>
+<RestartText>Restart</RestartText>
+<PrintText>Print...</PrintText>
+<HintText>Hint</HintText>
+<CheckText>Check</CheckText>
+<ShowCurrentLetterText>Show Current Letter</ShowCurrentLetterText>
+<ShowCurrentWordText>Show Current Word</ShowCurrentWordText>
+<ShowEveryWordText>Show Every Word</ShowEveryWordText>
+<CheckCurrentLetterText>Check Current Letter</CheckCurrentLetterText>
+<CheckCurrentWordText>Check Current Word</CheckCurrentWordText>
+<CheckEveryWordText>Check Every Word</CheckEveryWordText>
+<RemainingText>Remaining</RemainingText>
+<CongratulationsText>Congratulations.&#13;You've Won!</CongratulationsText>
+</Locale>
+<Name>The Colors</Name>
+<Settings>
+<ClueFont>Helvetica</ClueFont>
+<AnswerFont>Arabic Transparent</AnswerFont>
+<ClueColor>0x000000</ClueColor>
+<AnswerColor>0x000000</AnswerColor>
+<ClueSize>12</ClueSize>
+<AnswerSize>14</AnswerSize>
+<HintLetterLimit>-1</HintLetterLimit>
+<HintAnswerLimit>-1</HintAnswerLimit>
+<HintAllLimit>-1</HintAllLimit>
+<CheckLetterLimit>-1</CheckLetterLimit>
+<CheckAnswerLimit>-1</CheckAnswerLimit>
+<CheckAllLimit>-1</CheckAllLimit>
+<HideClues></HideClues>
+<UseClueAccordion>1</UseClueAccordion>
+<ClueListPosition>right</ClueListPosition>
+<HypeLevel>2</HypeLevel>
+<PageColor>0xFFFFFF</PageColor>
+<ControlColor>0x6FA8FF</ControlColor>
+</Settings>
+<Clues>
+<Pair cNum="0" direction="1" dNum="1">
+<ClueText>Wood color</ClueText>
+<AnswerPos>
+<El x="12" y="3"/>
+<El x="12" y="4"/>
+<El x="12" y="5"/>
+<El x="12" y="6"/>
+<El x="12" y="7"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="1" direction="0" dNum="1">
+<ClueText>Color missing?</ClueText>
+<AnswerPos>
+<El x="12" y="3"/>
+<El x="13" y="3"/>
+<El x="14" y="3"/>
+<El x="15" y="3"/>
+<El x="16" y="3"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="2" direction="0" dNum="2">
+<ClueText>Color Snow</ClueText>
+<AnswerPos>
+<El x="12" y="6"/>
+<El x="13" y="6"/>
+<El x="14" y="6"/>
+<El x="15" y="6"/>
+<El x="16" y="6"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="3" direction="0" dNum="3">
+<ClueText>Trees in spring</ClueText>
+<AnswerPos>
+<El x="8" y="7"/>
+<El x="9" y="7"/>
+<El x="10" y="7"/>
+<El x="11" y="7"/>
+<El x="12" y="7"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="4" direction="1" dNum="3">
+<ClueText>Cloudy sky</ClueText>
+<AnswerPos>
+<El x="8" y="7"/>
+<El x="8" y="8"/>
+<El x="8" y="9"/>
+<El x="8" y="10"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="5" direction="1" dNum="4">
+<ClueText>Color of the sky</ClueText>
+<AnswerPos>
+<El x="10" y="9"/>
+<El x="10" y="10"/>
+<El x="10" y="11"/>
+<El x="10" y="12"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="6" direction="0" dNum="5">
+<ClueText>What color are the bananas?</ClueText>
+<AnswerPos>
+<El x="8" y="10"/>
+<El x="9" y="10"/>
+<El x="10" y="10"/>
+<El x="11" y="10"/>
+<El x="12" y="10"/>
+<El x="13" y="10"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="7" direction="1" dNum="6">
+<ClueText>Color sunset</ClueText>
+<AnswerPos>
+<El x="12" y="10"/>
+<El x="12" y="11"/>
+<El x="12" y="12"/>
+<El x="12" y="13"/>
+<El x="12" y="14"/>
+<El x="12" y="15"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="8" direction="0" dNum="7">
+<ClueText>The color of apples?</ClueText>
+<AnswerPos>
+<El x="11" y="15"/>
+<El x="12" y="15"/>
+<El x="13" y="15"/>
+</AnswerPos>
+</Pair>
+</Clues>
+<Grid xSize="25" ySize="20" blockSize="23" backdropType="2" backdropColor="0x000000" backdropFileURL="the-colors_backdrop.jpg" backdropFileWidth="-1" backdropFileHeight="-1" casePolicy="0">
+<El x="12" y="3" ch="B" dNum="1">
+<cNum>0</cNum>
+<cNum>1</cNum>
+</El>
+<El x="13" y="3" ch="L">
+<cNum>1</cNum>
+</El>
+<El x="14" y="3" ch="A">
+<cNum>1</cNum>
+</El>
+<El x="15" y="3" ch="C">
+<cNum>1</cNum>
+</El>
+<El x="16" y="3" ch="K">
+<cNum>1</cNum>
+</El>
+<El x="12" y="4" ch="R">
+<cNum>0</cNum>
+</El>
+<El x="12" y="5" ch="O">
+<cNum>0</cNum>
+</El>
+<El x="12" y="6" ch="W" dNum="2">
+<cNum>0</cNum>
+<cNum>2</cNum>
+</El>
+<El x="13" y="6" ch="H">
+<cNum>2</cNum>
+</El>
+<El x="14" y="6" ch="I">
+<cNum>2</cNum>
+</El>
+<El x="15" y="6" ch="T">
+<cNum>2</cNum>
+</El>
+<El x="16" y="6" ch="E">
+<cNum>2</cNum>
+</El>
+<El x="8" y="7" ch="G" dNum="3">
+<cNum>4</cNum>
+<cNum>3</cNum>
+</El>
+<El x="9" y="7" ch="R">
+<cNum>3</cNum>
+</El>
+<El x="10" y="7" ch="E">
+<cNum>3</cNum>
+</El>
+<El x="11" y="7" ch="E">
+<cNum>3</cNum>
+</El>
+<El x="12" y="7" ch="N">
+<cNum>3</cNum>
+<cNum>0</cNum>
+</El>
+<El x="8" y="8" ch="R">
+<cNum>4</cNum>
+</El>
+<El x="8" y="9" ch="E">
+<cNum>4</cNum>
+</El>
+<El x="10" y="9" ch="B" dNum="4">
+<cNum>5</cNum>
+</El>
+<El x="8" y="10" ch="Y" dNum="5">
+<cNum>6</cNum>
+<cNum>4</cNum>
+</El>
+<El x="9" y="10" ch="E">
+<cNum>6</cNum>
+</El>
+<El x="10" y="10" ch="L">
+<cNum>6</cNum>
+<cNum>5</cNum>
+</El>
+<El x="11" y="10" ch="L">
+<cNum>6</cNum>
+</El>
+<El x="12" y="10" ch="O" dNum="6">
+<cNum>7</cNum>
+<cNum>6</cNum>
+</El>
+<El x="13" y="10" ch="W">
+<cNum>6</cNum>
+</El>
+<El x="10" y="11" ch="U">
+<cNum>5</cNum>
+</El>
+<El x="12" y="11" ch="R">
+<cNum>7</cNum>
+</El>
+<El x="10" y="12" ch="E">
+<cNum>5</cNum>
+</El>
+<El x="12" y="12" ch="A">
+<cNum>7</cNum>
+</El>
+<El x="12" y="13" ch="N">
+<cNum>7</cNum>
+</El>
+<El x="12" y="14" ch="G">
+<cNum>7</cNum>
+</El>
+<El x="11" y="15" ch="R" dNum="7">
+<cNum>8</cNum>
+</El>
+<El x="12" y="15" ch="E">
+<cNum>7</cNum>
+<cNum>8</cNum>
+</El>
+<El x="13" y="15" ch="D">
+<cNum>8</cNum>
+</El>
+</Grid>
+</CWForgeLiveDoc>

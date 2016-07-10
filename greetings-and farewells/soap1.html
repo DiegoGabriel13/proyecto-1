@@ -1,0 +1,282 @@
+<!-- saved from url=(0013)about:internet -->
+<html lang="en">
+<head>
+	<title>Greetings and farewells</title>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Crossword Forge 5.5.8" />
+<script language="JavaScript" type="text/javascript">
+<!--
+// -----------------------------------------------------------------------------
+// Globals
+// Major version of Flash required
+var requiredMajorVersion = 7;
+// Minor version of Flash required
+var requiredMinorVersion = 0;
+// Revision of Flash required
+var requiredRevision = 0;
+// the version of javascript supported
+var jsVersion = 1.0;
+// -----------------------------------------------------------------------------
+// -->
+</script>
+<script language="VBScript" type="text/vbscript">
+<!-- // Visual basic helper required to detect Flash Player ActiveX control version information
+Function VBGetSwfVer(i)
+  on error resume next
+  Dim swControl, swVersion
+  swVersion = 0
+  
+  set swControl = CreateObject("ShockwaveFlash.ShockwaveFlash." + CStr(i))
+  if (IsObject(swControl)) then
+    swVersion = swControl.GetVariable("$version")
+  end if
+  VBGetSwfVer = swVersion
+End Function
+// -->
+</script>
+<script language="JavaScript1.1" type="text/javascript">
+<!-- // Detect Client Browser type
+var isIE  = (navigator.appVersion.indexOf("MSIE") != -1) ? true : false;
+var isWin = (navigator.appVersion.toLowerCase().indexOf("win") != -1) ? true : false;
+var isOpera = (navigator.userAgent.indexOf("Opera") != -1) ? true : false;
+jsVersion = 1.1;
+// JavaScript helper required to detect Flash Player PlugIn version information
+function JSGetSwfVer(i){
+	// NS/Opera version >= 3 check for Flash plugin in plugin array
+	if (navigator.plugins != null && navigator.plugins.length > 0) {
+		if (navigator.plugins["Shockwave Flash 2.0"] || navigator.plugins["Shockwave Flash"]) {
+			var swVer2 = navigator.plugins["Shockwave Flash 2.0"] ? " 2.0" : "";
+      		var flashDescription = navigator.plugins["Shockwave Flash" + swVer2].description;
+			descArray = flashDescription.split(" ");
+			tempArrayMajor = descArray[2].split(".");
+			versionMajor = tempArrayMajor[0];
+			versionMinor = tempArrayMajor[1];
+			if ( descArray[3] != "" ) {
+				tempArrayMinor = descArray[3].split("r");
+			} else {
+				tempArrayMinor = descArray[4].split("r");
+			}
+      		versionRevision = tempArrayMinor[1] > 0 ? tempArrayMinor[1] : 0;
+            flashVer = versionMajor + "." + versionMinor + "." + versionRevision;
+      	} else {
+			flashVer = -1;
+		}
+	}
+	// MSN/WebTV 2.6 supports Flash 4
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.6") != -1) flashVer = 4;
+	// WebTV 2.5 supports Flash 3
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.5") != -1) flashVer = 3;
+	// older WebTV supports Flash 2
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 2;
+	// Can't detect in all other cases
+	else {
+		
+		flashVer = -1;
+	}
+	return flashVer;
+} 
+// If called with no parameters this function returns a floating point value 
+// which should be the version of the Flash Player or 0.0 
+// ex: Flash Player 7r14 returns 7.14
+// If called with reqMajorVer, reqMinorVer, reqRevision returns true if that version or greater is available
+function DetectFlashVer(reqMajorVer, reqMinorVer, reqRevision) 
+{
+ 	reqVer = parseFloat(reqMajorVer + "." + reqRevision);
+   	// loop backwards through the versions until we find the newest version	
+	for (i=25;i>0;i--) {	
+		if (isIE && isWin && !isOpera) {
+			versionStr = VBGetSwfVer(i);
+		} else {
+			versionStr = JSGetSwfVer(i);		
+		}
+		if (versionStr == -1 ) { 
+			return false;
+		} else if (versionStr != 0) {
+			if(isIE && isWin && !isOpera) {
+				tempArray         = versionStr.split(" ");
+				tempString        = tempArray[1];
+				versionArray      = tempString .split(",");				
+			} else {
+				versionArray      = versionStr.split(".");
+			}
+			versionMajor      = versionArray[0];
+			versionMinor      = versionArray[1];
+			versionRevision   = versionArray[2];
+			
+			versionString     = versionMajor + "." + versionRevision;   // 7.0r24 == 7.24
+			versionNum        = parseFloat(versionString);
+        	// is the major.revision >= requested major.revision AND the minor version >= requested minor
+			if ( (versionMajor > reqMajorVer) && (versionNum >= reqVer) ) {
+				return true;
+			} else {
+				return ((versionNum >= reqVer && versionMinor >= reqMinorVer) ? true : false );	
+			}
+		}
+	}	
+	return (reqVer ? false : 0.0);
+}
+
+function FocusOnFlashContent() {
+	// Set the focus to the flash file.  Seems to work in IE only -- GCC
+	document.cwf_live.focus();
+}
+
+// -->
+</script>
+<!-- GCC - Chose Substitution Back Color as #FFFFFF it's very close to white but isn't likely to occur accidentally, so we can safely replace it
+	 	in CWF.
+	 GCC - Wanted to setup a minimum height for the puzzle.  I do this using a table with a buttress element.
+	 	Although one should be able to use a fixed min-height with in conjunction with 100% for the actual height, this doesn't work on IE,
+	 	it also isn't necessary, table rows will not shrink below the size of the smallest row.  So we set the height of the buttress to be
+	 	the minimum (leave this at 609 so we can substitute it from CWF) and we setup the table to stretch to 100% of the space available.  
+	 	So if the window is big we get more space for the puzzle but if it is small we can get to the parts we want with the scrollbar.
+ -->
+<style type="text/css">
+.buttress {
+  background-color:#FFFFFF;
+  width:1px;
+  height:609;
+}
+</style>
+</head>
+
+
+
+<body bgcolor="#FFFFFF" onLoad="javascript:FocusOnFlashContent();">
+<!--url's used in the movie-->
+<!--text used in the movie-->
+
+
+<div id="header">
+			<div class="container"> 
+				
+				<!-- Logo -->
+				<div id="logo">
+					<h1><a href="#">Ingles</a></h1>
+					<br>
+					<h3<a href="#">Soup Letter Greetings</a></h3>
+					
+				</div>
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="..\proyecto\index.html">Homepage</a></li>
+						<li class="active"><a href="..\proyecto\modulo1.html">Module One</a></li>
+						<li><a href="..\proyecto\modulo2.html">Module Two</a></li>
+						<li><a href="..\proyecto\modulo3.html">Module Three</a></li>
+						<li><a href="..\proyecto\modulo4.html">Module Four</a></li>
+					</ul>
+				</nav>
+			</div>
+</div>
+
+<!-- Main -->
+		<div id="main">
+			<div class="container">
+				<div class="row"> 
+
+					<!-- Sidebar -->
+					<div id="sidebar" class="4u">
+						<section>
+							<header>
+								<h2>Games</h2>
+							</header>
+							<ul class="style">
+								<li>
+									<p class="posted"></p>
+									<h2>Hangman Game</h2>
+									<img src="images/pic01.jpg" alt="" /><br><br><br><br><br><br>
+									<p class="text">This game contains fruit, 
+									the Do you want to play?
+									</p>
+									<p><a href="..\ahorcado1.html">New Game</a></p>
+								</li>
+								
+								<li>
+									<p class="posted"></p>
+									<h2>Crossword</h2>
+									<img src="images/pic03.jpg" alt="" /><br><br><br><br><br><br>
+									<p class="text">This game contains the numbers in English
+									Do you want to look?	</p>
+									<p><a href="..\the-colors\cross1.html">New Game</a></p>
+								</li>
+								
+							</ul>
+						</section>
+					</div>
+				<!-- Content -->
+					<div id="content" class="8u skel-cell-important">
+						<section>
+							<header>
+								<h2>Alphabet Soup</h2>
+								<span class="byline">Serch the words</span>
+							</header>
+
+<script language="JavaScript" type="text/javascript">
+<!-- 
+var hasRightVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+if(hasRightVersion) {  // if we've detected an acceptable version
+    var oeTags = '<table height="100%" width="100%" cellpadding="0" cellspacing="0">'
+    + '<tr><td width="1"><div class="buttress"><\/div><\/td><td width="100%">'
+    + '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"'
+    + 'width="100%" height="100%"'
+    + 'codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">'
+    + '<param name="movie" value="cwf_live.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#FFFFFF" />'
+    + '<embed src="cwf_live.swf" quality="high" bgcolor="#FFFFFF" '
+    + 'width="100%" height="100%" name="cwf_live" align="middle"'
+    + 'play="true"'
+    + 'loop="false"'
+    + 'quality="high"'
+    + 'allowScriptAccess="sameDomain"'
+    + 'type="application/x-shockwave-flash"'
+    + 'pluginspage="http://www.macromedia.com/go/getflashplayer">'
+    + '<\/embed>'
+    + '<\/object>'
+    + '<\/td><\/tr><\/table>';
+    document.write(oeTags);   // embed the flash movie
+  } else {  // flash is too old or we can't detect the plugin
+    var alternateContent = 'This content requires the Macromedia Flash Player 7 or higher.'
+   	+ '<a href=http://www.macromedia.com/go/getflash/>Get Flash</a><br/>';
+    document.write(alternateContent);  // insert non-flash content
+  }
+// -->
+</script>
+<noscript>
+  	<b>Couldn't confirm presence of Flash 7 or higher because JavaScript was disabled.</b><br/>We highly recommend that you install Flash 7 or higher and that you enable JavaScript.<br/>
+  	<a href="http://www.macromedia.com/go/getflash/">Get Flash</a> ---
+  	<a href="cwf_live.swf">I really do have Flash installed.</a><br/>
+  	What follows is a plain HTML version of the puzzle.<br/>
+  	<br/>
+  	Greetings and farewells&#13;<br/>looking Greetings&#13;<br/><style type="text/css">td {width: 22; height: 22;}</style><table><tr><td>I</td><td>H</td><td>B</td><td>P</td><td>H</td><td>D</td><td>V</td><td>V</td><td>U</td><td>J</td><td>E</td><td>B</td><td>T</td><td>D</td><td>G</td><td>N</td><td>S</td><td>L</td><td>C</td><td>L</td><td>C</td><td>A</td><td>O</td><td>D</td><td>S</td></tr><tr><td>U</td><td>P</td><td>X</td><td>W</td><td>C</td><td>P</td><td>Y</td><td>G</td><td>C</td><td>I</td><td>I</td><td>J</td><td>E</td><td>R</td><td>Z</td><td>O</td><td>N</td><td>I</td><td>Y</td><td>A</td><td>D</td><td>I</td><td>R</td><td>R</td><td>U</td></tr><tr><td>O</td><td>I</td><td>T</td><td>M</td><td>V</td><td>V</td><td>P</td><td>U</td><td>Q</td><td>Z</td><td>C</td><td>F</td><td>R</td><td>A</td><td>Z</td><td>J</td><td>O</td><td>K</td><td>E</td><td>C</td><td>Z</td><td>L</td><td>G</td><td>K</td><td>A</td></tr><tr><td>X</td><td>L</td><td>W</td><td>I</td><td>A</td><td>L</td><td>C</td><td>B</td><td>E</td><td>L</td><td>T</td><td>O</td><td>S</td><td>W</td><td>C</td><td>N</td><td>Y</td><td>D</td><td>I</td><td>C</td><td>K</td><td>M</td><td>D</td><td>O</td><td>P</td></tr><tr><td>R</td><td>V</td><td>H</td><td>Z</td><td>Q</td><td>R</td><td>J</td><td>O</td><td>Y</td><td>O</td><td>Q</td><td>H</td><td>S</td><td>E</td><td>G</td><td>G</td><td>D</td><td>I</td><td>M</td><td>F</td><td>D</td><td>L</td><td>O</td><td>Y</td><td>K</td></tr><tr><td>B</td><td>I</td><td>F</td><td>R</td><td>Z</td><td>T</td><td>C</td><td>Z</td><td>S</td><td>E</td><td>E</td><td>Y</td><td>O</td><td>U</td><td>L</td><td>A</td><td>T</td><td>E</td><td>R</td><td>O</td><td>H</td><td>L</td><td>Z</td><td>R</td><td>Q</td></tr><tr><td>K</td><td>Z</td><td>O</td><td>P</td><td>N</td><td>C</td><td>D</td><td>K</td><td>A</td><td>J</td><td>N</td><td>G</td><td>Q</td><td>G</td><td>M</td><td>T</td><td>Z</td><td>A</td><td>Q</td><td>V</td><td>R</td><td>W</td><td>K</td><td>V</td><td>X</td></tr><tr><td>W</td><td>H</td><td>O</td><td>W</td><td>A</td><td>R</td><td>E</td><td>Y</td><td>O</td><td>U</td><td>G</td><td>M</td><td>C</td><td>P</td><td>C</td><td>Z</td><td>M</td><td>I</td><td>G</td><td>A</td><td>R</td><td>N</td><td>R</td><td>N</td><td>M</td></tr><tr><td>R</td><td>S</td><td>E</td><td>E</td><td>Y</td><td>O</td><td>U</td><td>T</td><td>O</td><td>M</td><td>O</td><td>R</td><td>R</td><td>O</td><td>W</td><td>C</td><td>Q</td><td>Y</td><td>M</td><td>X</td><td>A</td><td>R</td><td>I</td><td>B</td><td>Y</td></tr><tr><td>V</td><td>Y</td><td>W</td><td>G</td><td>O</td><td>O</td><td>D</td><td>A</td><td>F</td><td>T</td><td>E</td><td>R</td><td>N</td><td>O</td><td>O</td><td>N</td><td>L</td><td>K</td><td>F</td><td>Z</td><td>A</td><td>Z</td><td>M</td><td>N</td><td>F</td></tr><tr><td>Y</td><td>P</td><td>J</td><td>A</td><td>F</td><td>E</td><td>G</td><td>X</td><td>V</td><td>X</td><td>C</td><td>G</td><td>O</td><td>O</td><td>D</td><td>E</td><td>V</td><td>E</td><td>N</td><td>I</td><td>N</td><td>G</td><td>T</td><td>B</td><td>G</td></tr><tr><td>U</td><td>Q</td><td>N</td><td>U</td><td>V</td><td>E</td><td>R</td><td>Y</td><td>W</td><td>E</td><td>L</td><td>L</td><td>W</td><td>U</td><td>D</td><td>B</td><td>R</td><td>N</td><td>F</td><td>L</td><td>U</td><td>Y</td><td>U</td><td>T</td><td>M</td></tr><tr><td>G</td><td>O</td><td>O</td><td>D</td><td>N</td><td>I</td><td>G</td><td>H</td><td>T</td><td>I</td><td>F</td><td>K</td><td>K</td><td>T</td><td>U</td><td>D</td><td>C</td><td>D</td><td>Z</td><td>K</td><td>M</td><td>S</td><td>T</td><td>T</td><td>C</td></tr><tr><td>K</td><td>B</td><td>W</td><td>I</td><td>X</td><td>X</td><td>K</td><td>T</td><td>N</td><td>U</td><td>R</td><td>E</td><td>X</td><td>W</td><td>E</td><td>F</td><td>I</td><td>C</td><td>A</td><td>N</td><td>F</td><td>S</td><td>G</td><td>I</td><td>W</td></tr><tr><td>E</td><td>C</td><td>T</td><td>H</td><td>Z</td><td>R</td><td>N</td><td>X</td><td>U</td><td>Y</td><td>E</td><td>H</td><td>T</td><td>O</td><td>K</td><td>C</td><td>D</td><td>T</td><td>U</td><td>K</td><td>F</td><td>H</td><td>L</td><td>M</td><td>O</td></tr><tr><td>H</td><td>E</td><td>L</td><td>L</td><td>O</td><td>N</td><td>L</td><td>D</td><td>Q</td><td>A</td><td>Z</td><td>Y</td><td>X</td><td>Z</td><td>Y</td><td>G</td><td>O</td><td>O</td><td>D</td><td>B</td><td>Y</td><td>E</td><td>E</td><td>G</td><td>G</td></tr><tr><td>S</td><td>C</td><td>A</td><td>K</td><td>Q</td><td>W</td><td>P</td><td>V</td><td>Z</td><td>Q</td><td>I</td><td>A</td><td>M</td><td>F</td><td>I</td><td>N</td><td>E</td><td>H</td><td>C</td><td>K</td><td>L</td><td>G</td><td>T</td><td>O</td><td>W</td></tr></table>&#13;<br/>&#13;<br/>&#13;<br/>&#13;<br/>1. hola&#13;<br/>2. adios&#13;<br/>3.  Hasta luego&#13;<br/>4. Buenos días&#13;<br/>5. Buenas tardes&#13;<br/>6.  Buenas tardes-noches&#13;<br/>7. Buenas noches&#13;<br/>8. Cómo estás&#13;<br/>9. Estoy bien&#13;<br/>10. muy bien&#13;<br/>11. Hasta mañana&#13;<br/>
+  	<br/>
+</noscript>		
+		</section>
+		<div aling="center" ><h4>THE GREETINGS</h4></div>
+  		<img src="..\greetings-and farewells\images\s1.jpg "/>
+		</div>
+	</div>
+
+</div>
+<div id="copyright">
+			<div class="container">
+				Pagina 
+			</div>
+		</div>
+	</body>
+	
+</html>

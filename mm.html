@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Frutas</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="estilos/estilo_externo.css">
+
+<link rel="stylesheet" href="estilos/estilo_menu.css">
+
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="js/script.js"></script>
+      <link rel="stylesheet" href="css/craftyslide.css" />     
+     <link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<script>
+	function cambiar(valor) {
+		mensaje.value = valor;		
+		if(mensaje.value == 'Mela'){			
+			//mensaje.style.color='white';
+			//mensaje.style.backgroundColor='green';		
+			txt_manzana.value = "1";			
+		}
+		else{	
+			//mensaje.style.color='white';
+			//mensaje.style.backgroundColor='red';
+			txt_manzana.value = "0";
+		}	
+	}
+</script>
+
+<script>
+	function cambiar2(valor) {	
+		mensaje2.value = valor;		
+		if(mensaje2.value == 'Limone'){			
+			//mensaje2.style.color='white';
+			//mensaje2.style.backgroundColor='green';	
+			txt_limon.value = "1";			
+		}
+		else{			
+			//alert("Incorrecto");
+			///mensaje.style.background.color='red';
+			///mensaje2.style.color='white';
+			//ensaje2.style.backgroundColor='red';
+			txt_limon.value = "0";			
+		}	
+	}
+</script>
+<script>
+	function cambiar3(valor) {
+		mensaje3.value = valor;		
+		if(mensaje3.value == 'Pera'){				
+			///mensaje3.style.color='white';
+			///mensaje3.style.backgroundColor='green'	
+			txt_pera.value ="1";		
+		}
+		else{	
+			//mensaje3.style.color='white';
+			//mensaje3.style.backgroundColor='red';
+			txt_pera.value ="0";
+		}
+	
+	}
+</script>
+<script>
+	function cambiar4(valor) {
+		mensaje4.value = valor;		
+		if(mensaje4.value == 'Anguria'){			
+			///mensaje4.style.color='white';
+			///mensaje4.style.backgroundColor='green';	
+			txt_sandia.value ="1";
+		}
+		else{
+			///mensaje4.style.color='white';
+			//mensaje4.style.backgroundColor='red';
+			txt_sandia.value ="0";
+		}	
+	}
+</script>
+<script>
+	function cambiar5(valor) {
+		mensaje5.value = valor;
+	if(mensaje5.value == 'Papaia'){			
+			///mensaje5.style.color='white';
+			///mensaje5.style.backgroundColor='green';
+			txt_papaya.value ="1";
+					}
+		else{
+			///mensaje5.style.color='white';
+			//mensaje5.style.backgroundColor='red';
+			txt_papaya.value ="0";
+		}	
+	}
+</script>
+<script>
+	function cambiar6(valor) {
+			mensaje6.value = valor;		
+		if(mensaje6.value == 'Mandarino'){			
+			//mensaje6.style.color='white';
+			//mensaje6.style.backgroundColor='green';
+			txt_mandarina.value ="1";
+						
+		}
+		else{	
+			///mensaje6.style.color='white';
+			//mensaje6.style.backgroundColor='red';
+			txt_mandarina.value ="0";
+		}	
+	}
+</script
+<script>
+	function cambiar7(valor) {	
+		mensaje7.value = valor
+	if(mensaje7.value == 'Ananas'){			
+			//mensaje7.style.color='white';
+			///mensaje7.style.backgroundColor='green';
+			txt_piña.value ="1";		
+		}
+		else{		
+			//mensaje7.style.color='white';
+			///mensaje7.style.backgroundColor='red';
+			txt_piña.value ="0";
+		}
+	
+	}
+</script>
+<script>
+	function cambiar8(valor) {	
+		mensaje8.value = valor;		
+		if(mensaje8.value == 'Avocado'){			
+			//mensaje8.style.color='white';
+			///mensaje8.style.backgroundColor='green';
+			txt_aguacate.value ="1";		
+		}
+		Else{	
+			//mensaje8.style.color='white';
+			//mensaje8.style.backgroundColor='red';
+			txt_aguacate.value ="0";
+		}	
+	}
+</script>
+
+<script>
+	function cambiar9(valor) {	
+		mensaje9.value = valor;		
+		if(mensaje9.value == 'Melone')			
+			///mensaje9.style.color='white';
+			///mensaje9.style.backgroundColor='green';
+			txt_melon.value ="1";			
+		}
+		else{	
+			
+			///mensaje9.style.color='white';
+			///mensaje9.style.backgroundColor='red';txt_melon.value ="0";
+		}
+	
+	}
+</script>
+
+<script>
+	function cambiar10(valor) {
+			mensaje10.value = valor;		
+		if(mensaje10.value == 'Banana'){			
+			///mensaje10.style.color='white';
+			//mensaje10.style.backgroundColor='green';
+			txt_platano.value ="1";
+					
+		}
+		Else{			
+			//mensaje10.style.color='white';
+			//mensaje10.style.backgroundColor='red';
+			txt_platano.value ="0";
+		}
+		}
+</script>
+
+
+<script>
+	function cambiar11(valor) {	
+		mensaje11.value = valor;		
+		if(mensaje11.value == 'Kiwi'){					///mensaje11.style.color='white';
+			///mensaje11.style.backgroundColor='green';
+			txt_kiwi.value ="1";			
+			
+		}
+		else{		
+			//mensaje11.style.color='white';
+			///mensaje11.style.backgroundColor='red';
+			txt_kiwi.value ="0";
+		}
+	
+	}
+</script>
+
+<
+			//mensaje12.style.color='white';
+			//mensaje12.style.backgroundColor='red';
+			txt_uva.value ="0";
+		}
+	
+	}
+</script>
+
+<script>
+
+////validacion que no ingrese numeros 
+  function validar_letras (e) {
+    key=e.keyCode || e.which;
+    teclado=String.fromCharCode(key);
+    letras="áéíóúabcdefghijklmnñopqrstuvwxyz";
+    especiales="8-37-38-46";
+    teclado_especial=false;
+    for (var i in especiales) 
+    {
+      if (key==especiales [i]) 
+          {
+    	  
+           teclado_especial=true;
+          }
+    }
+    if (letras.indexOf(teclado)==-1 && !teclado_especial ) 
+    {
+    	alert("Imposible Modificar Cajas De Texto");
+      return false;
+    }
+  }
+</script>
+
+<script type="text/javascript">
+
+function puntaje() {
+	var dos = txt_limon.value ;
+	var uno = txt_manzana.value  ;
+	 var tres = txt_pera.value;
+	 var cuatro = txt_sandia.value;	
+	 var cinco = txt_papaya.value;
+	 var seis = txt_mandarina.value;
+	 var siete = txt_piña.value;
+	 var ocho = txt_aguacate.value;
+	 var nueve = txt_melon.value;
+	 var dies = txt_platano.value;
+	 var once = txt_kiwi.value;
+	 var doce = txt_uva.value;
+	 
+	var total = parseInt(uno)+parseInt(dos)+parseInt(tres)+parseInt(cuatro)+parseInt(cinco)+parseInt(seis)+parseInt(siete)+parseInt(ocho)+parseInt(nueve)+parseInt(dies)+parseInt(once)+parseInt(doce);
+	alert("PUNTAJE OBTENIDO   "+total+ "   ACIERTOS SOBRE  12");
+
+</script>
+
+
+<script type="text/javascript">
+
+function muestra_imagen(img) {
+	
+		
+	if(txt_manzana.value == "1"){	
+	
+		contenedor_uno.src ="img/b.png";		
+	}
+	
+	if(txt_manzana.value == "0"){	
+		contenedor_uno.src ="img/x.png";		
+	}
+	//////dos///
+	
+	if(txt_limon.value == "1"){			
+		contenedor_dos.src ="img/b.png";		
+				
+	
+	}
+	
+	
+	if(txt_limon.value == "0"){	
+				contenedor_dos.src ="img/x.png";		
+		
+	}
+	
+	///tres//
+	
+	if(txt_pera.value== "1"){			
+		contenedor_tres.src ="img/b.png";		
+	}
+	if(txt_pera.value == "0"){	
+				contenedor_tres.src ="img/x.png";		
+		
+	}
+
+	////cuatro
+	
+if(txt_sandia.value== "1")		
+		contenedor_cuatro.src ="img/b.png";		
+				
+	
+	}
+	
+	
+	if(txt_sandia.value == "0"){	
+				contenedor_cuatro.src ="img/x.png";	
+		
+	}
+	
+	
+	
+	
+	///cinco
+	
+if(txt_papaya.value== "1"){			
+		contenedor_cinco.src ="img/b.png";	
+	}
+	if(txt_papaya.value == "0"){			
+		contenedor_cinco.src ="img/x.png";				
+	}
+	///seis
+	
+if(txt_mandarina.value== "1"){		
+		contenedor_seis.src ="img/b.png";	
+	}
+	
+	
+	if(txt_mandarina.value == "0"){			
+		contenedor_seis.src ="img/x.png";	
+		
+	}
+	
+	///contenedor_siete//	
+	
+if(txt_piña.value== "1"){	
+		
+		contenedor_siete.src ="img/b.png";		
+	}
+	
+	if(txt_piña.value == "0"){	
+		
+		contenedor_siete.src ="img/x.png";		
+		
+	}
+	///contenedor_ocho//
+	
+if(txt_aguacate.value== "1"){	
+		
+		contenedor_ocho.src ="img/b.png";		
+				
+	
+	}
+	
+	
+	if(txt_aguacate.value == "0"){	
+		
+		contenedor_ocho.src ="img/x.png";		
+		
+	}
+	
+	///contenedos_nueve
+	
+if( txt_melon.value== "1"){	
+		
+		contenedor_nueve.src ="img/b.png";		
+				
+	
+	}
+	
+	
+	if( txt_melon.value == "0"){	
+		
+		contenedor_nueve.src ="img/x.png";		
+		
+	}
+	
+	
+	///contenedor_diez
+	
+if( txt_platano.value== "1"){	
+		
+	contenedor_dies.src ="img/b.png";		
+				
+	
+	}
+	
+	
+	if( txt_platano.value == "0"){	
+		contenedor_dies.src ="img/x.png";		
+		
+	}
+	
+	
+	///contenedor_once
+	
+	if(  txt_kiwi.value== "1"){	
+		
+		contenedor_once.src ="img/b.png";		
+					
+		
+		}
+		
+		
+		if(  txt_kiwi.value == "0"){	
+			contenedor_once.src ="img/x.png";		
+			
+		}
+		
+		///contenedor_doce
+		
+		if(  txt_uva.value == "1"){	
+			
+			contendor_doce.src ="img/b.png";		
+						
+			
+			}
+			
+			
+			if(  txt_uva.value == "0"){	
+				contendor_doce.src ="img/x.png";		
+				
+			}
+}
+
+</script>
+
+
+<script type="text/javascript">
+
+function solonumeros(x){
+	
+	key = x.keyCode || x.which;
+
+	
+	 teclado = String.fromCharCode(key);
+	  numero = "0123456789";
+	  especiales = "8-37-38-46";
+	 
+	  teclado_especial = false;
+
+	for(var i in especiales){		
+	
+	if(key==especiales[i]){
+	teclado_especial= true;
+	}
+	}
+	
+	if(numero.indexOf(teclado)==-1 && !teclado_especial){
+		alert("Imposible Modificar Cajas De Texto");
+	return false;
+
+
+	}
+	
+}
+
+
+</script>
+
+
+
+</script>
+
+<script type="text/javascript">
+
+function solucion() {
+	
+	
+	alert("Solucion_Encontrada");
+	mensaje.value = "Mela";
+
+	mensaje2.value = "Limone";
+	mensaje3.value = "Pera";
+	mensaje4.value = "Anguria";
+	mensaje5.value = "Papaia";
+	mensaje6.value = "Mandarino";
+	mensaje7.value = "Ananas";
+	mensaje8.value = "Avocado";
+	mensaje9.value = "Melone";
+	mensaje10.value = "Banana";
+	mensaje11.value = "Kiwi";
+	mensaje12.value = "Uva";
+
+
+}
+
+
+</script>
+
+
+<body>
+
+<div  class="container-fluid">
+
+<header>
+<center>
+<h1>TITULO DE LA PAGINA WEB</h1>
+<h3>Centro Cultural de Idiomas</h3>
+</center>
+</header>
+<
+
+</div>
+<input type="button" value="Solucion" onclick="solucion();">
+</div>
+
+<div id="seccion_ejercicios1" style="background-color: white;">
+
+<table border="0" >
+<tr>
+
+<!---SECCION UNO---->	
+<td>
+
+		
+	<img src="frutas/manzana.png" width="140px;" height="130px;"><p><p>
+<select onchange="cambiar(this.value);" class="con_estilos" >
+    
+		<option value="Manzano">Manzano</option>
+		<option value="Nela">Nela</option>
+		<option value="Mela">Mela</option>
+		<option value="Pesca">Pesca</option>
+		<option value="Mele">Mele</option>
+	</select>
+	<p>
+	
+	<input type="text"  id="mensaje"  style="width: 70px; text-align: center;" onkeypress="return validar_letras(event), solonumeros(this)"  >
+	<img  src=" " id="contenedor_uno" width="40px;">
+	
+	<input type="hidden"  style="width: 10px;" id="txt_manzana" value="0" >		
+</td>
+<!---FIN---->
+<!---SECCION DOS---->	
+<td>		
+	<img src="frutas/limon.png" width="140px;" height="133px;"><p><p>
+<p><p>
+<select onchange="cambiar2(this.value);"  class="con_estilos" >
+      
+		<option value="Anguria">Anguria</option>
+		<option value="Limoni">Limoni</option>
+		<option value="Lemon">Lemon</option>
+		<option value="Limon">Limon</option>
+		<option value="Limone">Limone</option>
+	</select>
+	<p>
+		
+	<input type="text" style="width: 70px; text-align: center;" id="mensaje2" onkeypress="return validar_letras(event), solonumeros(this)" >
+	
+	<img  src=""  id="contenedor_dos" width="40px;" >
+	
+	<input type="hidden"  style="width: 10px; " id="txt_limon" value="0">	
+</td>
+<!---FIN---->
+<!---SECCION TRES---->	
+
+<td>		
+	<img src="frutas/pera.png" width="140px;" height="133px;"><p><p>
+
+<select onchange="cambiar3(this.value);"  class="con_estilos" >
+		<option value="">Pere</option>
+		<option value="Pera">Pera</option>
+		<option value="Pere">Persa</option>
+		<option value="Pesca">Pesca</option>
+			<option value="Pesca">Mela</option>
+	</select>
+	<p><p>
+	<input type="text" style="width: 70px; text-align: center;" id="mensaje3" onkeypress="return validar_letras(event), solonumeros(this)" >
+	<img  src="" width="40px;" id="contenedor_tres">
+	<input type="hidden"  style="width: 10px;" value="0"  id="txt_pera">	
+	
+</td>
+<!---FIN---->
+<!---SECCION CUATRO---->	
+
+<td>
+
+		
+	<img src="frutas/sandia.png" width="140px;" height="133px;">	<p>
+	<p>	
+	<select onchange="cambiar4(this.value);" class="con_estilos" >
+		<option value="Limone">Anguri</option>
+		<option value="Pera">Angora</option>
+		<option value="Mela">Ananas</option>
+		<option value="Anguria">Anguria</option>
+		<option value="Anguria">Sandia</option>
+	</select>
+	<p><p>
+	<input type="text" style="width: 70px ; text-align: center;" id="mensaje4"onkeypress="return validar_letras(event), solonumeros(this)" >
+	<img  src="" width="40px;" id="contenedor_cuatro">
+	<input type="hidden"  style="width: 10px;" id="txt_sandia" value="0" >
+	
+</td>
+
+<!---FIN---->
+<!---SECCION CINCO---->	
+<td>		
+	<img src="frutas/papaya.png" width="140px;" height="133px;" ><p><p>
+<p><p>
+<select onchange="cambiar5(this.value);" class="con_estilos" >
+		<option value="Limone">Papaie</option>
+		<option value="Pera">Papaya</option>
+		<option value="Papaia">Papaia</option>
+		<option value="Pesca">Pesca</option>
+		<option value="Patata">Patata</option>
+	</select>
+	<p><p>
+	<input type="text" style="width: 70px; text-align: center;" id="mensaje5" onkeypress="return validar_letras(event), solonumeros(this)" >
+	<img  src="" width="40px;" id="contenedor_cinco">
+	
+	<input type="hidden"  style="width: 10px;" id="txt_papaya" value="0" >
+</td>
+<!---FIN---->	
+<!---SECCION SEIS---->	
+<td>		
+	<img src="frutas/mandarina.png" width="140px;" height="133px;" >
+	<p><p>
+	
+	<select onchange="cambiar6(this.value);" class="con_estilos" >
+		<option value="Limone">Limone</option>
+		<option value="Mandaro">Mandaro</option>
+		<option value="Mandarino">Mandarino</option>
+		<option value="Mandarina">Mandarina</option>
+		<option value="Pesca">Pesca</option>
+	</select>
+	<p><p>
+	<input type="text" style="width: 80px; text-align: center;" id="mensaje6" onkeypress="return validar_letras(event), solonumeros(this)" >
+	<img  src="" width="40px;" id="contenedor_seis">
+	
+	<input type="hidden"  style="width: 5px;" id="txt_mandarina" value="0">   
+	
+</td>
+<!---FIN---->	
+
+<tr>
+
+
+</table>
+
+
+<table  >
+
+<tr>
+<td>
+
+<img src="frutas/piña.png" width="140px;" height="133px;"  ><p><p>
+<p><p>
+<select onchange="cambiar7(this.value);" class="con_estilos">
+		<option value="Anane">Anane</option>
+		<option value="Pera">Pera</option>
+		<option value="Piñe">Piñe</option>
+	     <option value="Piña">Piña</option>
+		<option value="Ananas">Ananas</option>
+	</select>
+	<p><p>
+	<input type="text" style="width: 70px; text-align: center;" id="mensaje7" onkeypress="return validar_letras(event), solonumeros(this)" >
+	<img  src="" width="40px;" id="contenedor_siete">
+	
+	<input type="hidden"  style="width: 10px;" id="txt_piña" e="0" >
+</td>
+
+<td>
+
+<img src="frutas/aguacate.png" width="140px;" height="133px;" ><p><p>
+
+<p><p>
+<select onchange="cambiar8(this.value);" class="con_estilos">
+		<option value="Mela">Mela</option>
+		<option value="Avocadi">Avocadi</option>
+		<option value="Avocado">Avocato</option>
+	    <option value="Aguacate">Aguacate</option>
+		<option value="Ananas">Ananas</option>
+	</select>
+	<p><p>
+	<input type="text" style="width: 70px; text-align: center;" id="mensaje8" onkeypress="return validar_letras(event), solonumeros(this)" >
+	<img  src="" width="40px;" id="contenedor_ocho">
+	
+	<input type="hidden"  style="width: 10px;" id="txt_aguacate" value="0" ></td>
+
+<td>
+
+<img src="frutas/melon.png" width="140px;" height="133px;"><p><p>
+
+<p><p>
+<select onchange="cambiar9(this.value);" class="con_estilos" >
+<option value="Limone">Melon</option>
+		<option value="Meloni">Meloni</option>
+		<option value="Avocado">Avocato</option>
+	    <option value="Anguria">Anguria</option>
+		<option value="Melone">Melone</option>
+	</select>
+	<p><p>
+	<input type="text" style="width: 70px; text-align: center;" id="mensaje9" onkeypress="return validar_letras(event), solonumeros(this)" >
+	<img  src="" width="40px;" id="contenedor_nueve">
+	
+	<input type="hidden"  style="width: 10px;" id="txt_melon" value="0" >
+</td>
+
+<td>
+
+<img src="frutas/platano.png" width="140px;" height="133px;"><p><p>
+<p><p>
+<select onchange="cambiar10(this.value);" class="con_estilos" >
+<option value="Mela">Mela</option>
+		<option value="Banane">Banane</option>
+		<option value="Avo">Avocato</option>
+	    <option value="Banana">Banana</option>
+		<option value="Platano">Platano</option>
+	</select>
+	<p><p>
+	<input type="text" style="width: 70px; text-align: center;" id="mensaje10" onkeypress="return validar_letras(event), solonumeros(this)" >
+	<img  src="" width="40px;" id="contenedor_dies">
+	
+	<input type="hidden"  style="width: 10px;" id="txt_platano" value="0" >
+</td>
+
+<td>
+
+<img src="frutas/kiwi.png" width="140px;" height="133px;"><p><p>
+
+
+<p><p>
+<select onchange="cambiar11(this.value);" class="con_estilos" >
+
+<option value="Kiwe">kiwe</option>
+		<option value="Kiwi">Kiwi</option>
+		<option value="Avocado">Avocato</option>
+	    <option value="Trisico">Trisico</option>
+		<option value="Quiwi">Quiwi</option>
+	</select>
+	
+	<p><p>
+	<input type="text" style="width: 70px; text-align: center;" id="mensaje11" onkeypress="return validar_letras(event), solonumeros(this)" >
+	<img  src="" width="40px;" id="contenedor_once">
+	
+	<input type="hidden"  style="width: 10px;" id="txt_kiwi" value="0" >
+</td>
+<td>
+
+<img src="frutas/uva.png" width="140px;" height="133px;"  ><p><p>
+
+<p><p>
+<select onchange="cambiar12(this.value);" class="con_estilos" >
+
+<option value="Lemon">Limon</option>
+		<option value="Uvani">Uvani</option>
+		<option value="Uva">Uva</option>
+	    <option value="Uve">Uve</option>
+		<option value="Uvas">Uvas</option>
+	</select>
+	
+	<p><p>
+	<input type="text" style="width: 70px; text-align: center;" id="mensaje12" onkeypress="return validar_letras(event), solonumeros(this)" >
+	
+	<img  src="" width="40px;"  id="contendor_doce">
+	
+	<input type="hidden"  style="width: 10px;" id="txt_uva" value="0" >
+</td>
+</tr>
+</table>
+
+	
+	
+	
+	<input type="button" value="PUNTAJE" onclick="muestra_imagen(this),puntaje();">
+</div>
+
+<div id="seccion_derecha" style="background-color:red;">
+</div>
+ <div id="footer">
+ <h4>Todos los derechos reservados por los autores</h4>
+ 
+ </div>
+</body>
+
+</html>
