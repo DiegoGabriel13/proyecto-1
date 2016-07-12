@@ -1,0 +1,433 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>FOR / SINCE / AGO</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+
+
+<script>
+	function cambiar1(valor) {
+		mensaje.value = valor;		
+		if(mensaje.value == 'ksdjal'){			
+			//mensaje.style.color='white';
+			//mensaje.style.backgroundColor='green';		
+			txt_primero.value = "1";			
+		}
+		else{	
+			//mensaje.style.color='white';
+			//mensaje.style.backgroundColor='red';
+			txt_primero.value = "0";
+		}	
+	}
+</script>
+
+<script>
+	function cambiar2(valor) {
+		mensaje2.value = valor;		
+		if(mensaje2.value == 'first'){			
+			//mensaje.style.color='white';
+			//mensaje.style.backgroundColor='green';		
+			txt_segundo.value = "1";			
+		}
+		else{	
+			//mensaje.style.color='white';
+			//mensaje.style.backgroundColor='red';
+			txt_segundo.value = "0";
+		}	
+	}
+</script>
+
+<script>
+	function cambiar3(valor) {
+		mensaje3.value = valor;		
+		if(mensaje.value == 'first'){			
+			//mensaje.style.color='white';
+			//mensaje.style.backgroundColor='green';		
+			txt_tercero.value = "1";			
+		}
+		else{	
+			//mensaje.style.color='white';
+			//mensaje.style.backgroundColor='red';
+			txt_tercero.value = "0";
+		}	
+	}
+</script>
+
+<script>
+	function cambiar4(valor) {
+		mensaje4.value = valor;		
+		if(mensaje4.value == 'first'){			
+			//mensaje.style.color='white';
+			//mensaje.style.backgroundColor='green';		
+			txt_cuarto.value = "1";			
+		}
+		else{	
+			//mensaje.style.color='white';
+			//mensaje.style.backgroundColor='red';
+			txt_cuarto.value = "0";
+		}	
+	}
+</script>
+
+<script>
+	function cambiar5(valor) {
+		mensaje5.value = valor;		
+		if(mensaje5.value == 'first'){			
+			//mensaje.style.color='white';
+			//mensaje.style.backgroundColor='green';		
+			txt_quinto.value = "1";			
+		}
+		else{	
+			//mensaje.style.color='white';
+			//mensaje.style.backgroundColor='red';
+			txt_quinto.value = "0";
+		}	
+	}
+</script>
+
+
+
+
+<script>
+
+////validacion que no ingrese numeros 
+  function validar_letras (e) {
+    key=e.keyCode || e.which;
+    teclado=String.fromCharCode(key);
+    letras="áéíóúabcdefghijklmnñopqrstuvwxyz";
+    especiales="8-37-38-46";
+    teclado_especial=false;
+    for (var i in especiales) 
+    {
+      if (key==especiales [i]) 
+          {
+    	  
+           teclado_especial=true;
+          }
+    }
+    if (letras.indexOf(teclado)==-1 && !teclado_especial ) 
+    {
+    	alert("Imposible Modificar Cajas De Texto");
+      return false;
+    }
+  }
+</script>
+
+<script type="text/javascript">
+
+function puntaje() {
+	var uno = txt_primero.value ;
+	var dos = txt_segundo.value  ;
+	 var tres = txt_tercero.value;
+	 var cuatro = txt_cuarto.value;	
+	 var cinco = txt_quinto.value;
+	 var seis = txt_sexto.value;
+	 var siete = txt_septimo.value;
+	 var ocho = txt_octavo.value;
+	 var nueve = txt_noveno.value;
+	 var diez = txt_decimo.value;
+	 
+	var total = parseInt(uno)+parseInt(dos)+parseInt(tres)+parseInt(cuatro)+parseInt(cinco)+parseInt(seis)+parseInt(siete)+parseInt(ocho)+parseInt(nueve)+parseInt(diez);
+
+	alert("PUNTAJE OBTENIDO   "+total+ "   ACIERTOS SOBRE  10");
+}
+
+</script>
+
+
+<script type="text/javascript">
+
+
+function muestra_imagen(img) {
+	
+		
+	if(txt_primero.value == "1"){	
+	
+		contenedor_uno.src ="images/b.jpg";		
+	}
+	
+	if(txt_primero.value == "0"){	
+		contenedor_uno.src ="images/x.jpg";		
+	}
+	//////dos///
+	
+	if(txt_segundo.value == "1"){			
+		contenedor_dos.src ="images/b.jpg";		
+				
+	
+	}
+	
+	
+	if(txt_segundo.value == "0"){	
+				contenedor_dos.src ="images/x.jpg";		
+		
+	}
+	
+	///tres//
+	
+	if(txt_tercero.value== "1"){			
+		contenedor_tres.src ="images/b.jpg";		
+	}
+	if(txt_tercero.value == "0"){	
+				contenedor_tres.src ="images/x.jpg";		
+		
+	}
+
+	////cuatro
+	
+	if(txt_cuarto.value== "1")	{	
+		contenedor_cuatro.src ="images/b.jpg";		
+				
+	
+	}
+	
+	
+	if(txt_cuarto.value == "0"){	
+				contenedor_cuatro.src ="images/x.jpg";	
+		
+	}
+	
+	
+	
+	
+	///cinco
+	
+ if(txt_quinto.value== "1"){			
+		contenedor_cinco.src ="images/b.jpg";	
+	}
+	if(txt_quinto.value == "0"){			
+		contenedor_cinco.src ="images/x.jpg";				
+	}
+	///seis
+	
+ if(txt_sexto.value== "1"){		
+		contenedor_seis.src ="images/b.jpg";	
+	}
+	
+	
+	if(txt_sexto.value == "0"){			
+		contenedor_seis.src ="images/x.jpg";	
+		
+	}
+	
+	///contenedor_siete//	
+	
+ if(txt_septimo.value== "1"){	
+		
+		contenedor_siete.src ="images/b.jpg";		
+	}
+	
+	if(txt_septimo.value == "0"){	
+		
+		contenedor_siete.src ="images/x.jpg";		
+		
+	}
+	///contenedor_ocho//
+	
+ if(txt_octavo.value== "1"){	
+		
+		contenedor_ocho.src ="images/b.jpg";		
+				
+	
+	}
+	
+	
+	if(txt_octavo.value == "0"){	
+		
+		contenedor_ocho.src ="images/x.jpg";		
+		
+	}
+	
+	///contenedos_nueve
+	
+ if( txt_noveno.value== "1"){	
+		
+		contenedor_nueve.src ="images/b.jpg";		
+				
+	
+	}
+	
+	
+	if( txt_noveno.value == "0"){	
+		
+		contenedor_nueve.src ="images/x.jpg";		
+		
+	}
+	
+	
+	///contenedor_diez
+	
+ 		if( txt_decimo.value== "1"){	
+		
+		contenedor_diez.src ="images/b.jpg";		
+				
+	
+		}
+	
+	
+		if(txt_decimo.value == "0"){	
+		contenedor_diez.src ="images/x.jpg";		
+		
+		}
+}
+</script>
+
+
+<script type="text/javascript">
+
+function solonumeros(x){
+	
+	key = x.keyCode || x.which;
+
+	
+	 teclado = String.fromCharCode(key);
+	  numero = "0123456789";
+	  especiales = "8-37-38-46";
+	 
+	  teclado_especial = false;
+
+	for(var i in especiales){		
+	
+	if(key==especiales[i]){
+	teclado_especial= true;
+	}
+	}
+	
+	if(numero.indexOf(teclado)==-1 && !teclado_especial){
+		alert("Imposible Modificar Cajas De Texto");
+	return false;
+
+
+	}
+	
+}
+
+
+</script>
+</script>
+
+<script type="text/javascript">
+function solucion() {
+		
+	alert("Solucion_Encontrada");
+	mensaje.value = "first";
+	mensaje2.value = "second";
+	mensaje3.value = "third";
+	mensaje4.value = "fourth";
+	mensaje5.value = "fifth";
+	mensaje6.value = "sixth";
+	mensaje7.value = "seventh";
+	mensaje8.value = "eighth";
+	mensaje9.value = "ninth";
+	mensaje10.value = "tenth";
+	
+}
+
+
+</script>
+
+
+
+
+<body class="no-sidebar">
+	<div id="header">
+			<div class="container"> 
+				
+				<!-- Logo -->
+				<div id="logo">
+               <h1><a href="#">ENGLISH</a></h1>
+               <span>MODULE FOUR</span>
+               <span>FOR / SINCE / AGO</span>
+            </div>
+				
+				<!-- Nav -->
+				<nav id="nav">
+              <ul>
+                  <li><a href="..\index.html">Homepage</a></li>
+                  <li ><a href="..\modulo1.html">Module One</a></li>
+                  <li ><a href="..\modulo2.html">Module Two</a></li>
+                  <li><a href="..\modulo3.html">Module Three</a></li>
+                  <li class="active"><a href="..\modulo4.html">Module Four</a></li>
+               </ul>
+            </nav>
+			</div>
+		</div>
+		<!-- Main -->
+		<div id="main">
+			<div class="container">
+			<section>
+				<header>
+					<h1>Infinitive verb</h1>
+				</header>
+			</section>
+  
+
+				<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;}
+.tg .tg-yw4l{vertical-align:top}
+.tg .tg-6k2t{background-color:#D2E4FC;vertical-align:top}
+
+</style>
+<CENTER>
+
+
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l">Completa</th>
+    <th class="tg-yw4l">Oracion</th>
+ 
+  </tr>
+  
+  <tr>
+    <td class="tg-6k2t">For 3 years</td>
+  
+    <td class="tg-6k2t">Hace 3 años</td>
+
+    <td class="tg-6k2t"><img  src="" width="40px;" id="contenedor_cinco"></td>
+
+  </tr>
+  
+
+  <tr>
+    <td class="tg-yw4l">For 2 weeks</td>
+  
+    <td class="tg-yw4l">Hace 2 semanas</td>
+  </tr>
+  
+  <tr>
+    <td class="tg-6k2t">For 6 days</td>
+  
+    <td class="tg-6k2t">Hace 6 días</td>
+  </tr>
+
+
+  <tr>
+    <td class="tg-yw4l">For 10 hours</td>
+
+    <td class="tg-yw4l">Hace 10 horas</td>
+  </tr>
+
+
+</table>
+
+
+
+
