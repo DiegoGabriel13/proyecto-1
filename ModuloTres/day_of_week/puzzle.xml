@@ -1,0 +1,549 @@
+<?xml version="1.0"?>
+<CWForgeLiveDoc version="5.5.8" suggestedCWFLVersion="1" puzzleType="WordSearch" gridWordCount="7" license="ked">
+<Title tNum="0" align="center">
+<Text>&#13;&#13;Day Of Week&#13;</Text>
+<Style font="Helvetica" size="18" color="0x000000" bold="" italic="" underline=""/>
+</Title>
+<Locale>
+<Alphabet>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</Alphabet>
+<AcrossText>Across</AcrossText>
+<DownText>Down</DownText>
+<WordSearchLabelText></WordSearchLabelText>
+<AboutCWFLiveText>Powered by Crossword Forge...</AboutCWFLiveText>
+<CreateYourOwnPuzzleText>Want to make Word Search Puzzles?</CreateYourOwnPuzzleText>
+<InputAlphabetText>Input Alphabet</InputAlphabetText>
+<GameText>Game</GameText>
+<RestartText>Restart</RestartText>
+<PrintText>Print...</PrintText>
+<HintText>Hint</HintText>
+<CheckText>Check</CheckText>
+<ShowCurrentLetterText>Show Next Letter</ShowCurrentLetterText>
+<ShowCurrentWordText>Show Next Word</ShowCurrentWordText>
+<ShowEveryWordText>Show Every Word</ShowEveryWordText>
+<CheckCurrentLetterText>Check Current Letter</CheckCurrentLetterText>
+<CheckCurrentWordText>Check Current Word</CheckCurrentWordText>
+<CheckEveryWordText>Check Every Word</CheckEveryWordText>
+<RemainingText>Remaining</RemainingText>
+<CongratulationsText>Congratulations.&#13;You've Won!</CongratulationsText>
+</Locale>
+<Name>day_of_week</Name>
+<Settings>
+<ClueFont>Helvetica</ClueFont>
+<AnswerFont>Helvetica</AnswerFont>
+<ClueColor>0x000000</ClueColor>
+<AnswerColor>0x000000</AnswerColor>
+<ClueSize>12</ClueSize>
+<AnswerSize>12</AnswerSize>
+<HintLetterLimit>-1</HintLetterLimit>
+<HintAnswerLimit>-1</HintAnswerLimit>
+<HintAllLimit>-1</HintAllLimit>
+<CheckLetterLimit>0</CheckLetterLimit>
+<CheckAnswerLimit>0</CheckAnswerLimit>
+<CheckAllLimit>0</CheckAllLimit>
+<HideClues></HideClues>
+<UseClueAccordion>1</UseClueAccordion>
+<ClueListPosition>right</ClueListPosition>
+<HypeLevel>2</HypeLevel>
+<PageColor>0xFFFFFF</PageColor>
+<ControlColor>0x6FA8FF</ControlColor>
+</Settings>
+<Clues>
+<Pair cNum="0" direction="0" dNum="0">
+<ClueText>Lunes</ClueText>
+<AnswerPos>
+<El x="3" y="0"/>
+<El x="4" y="0"/>
+<El x="5" y="0"/>
+<El x="6" y="0"/>
+<El x="7" y="0"/>
+<El x="8" y="0"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="1" direction="2" dNum="0">
+<ClueText>Martes</ClueText>
+<AnswerPos>
+<El x="6" y="3"/>
+<El x="7" y="4"/>
+<El x="8" y="5"/>
+<El x="9" y="6"/>
+<El x="10" y="7"/>
+<El x="11" y="8"/>
+<El x="12" y="9"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="2" direction="3" dNum="0">
+<ClueText>Miercóles</ClueText>
+<AnswerPos>
+<El x="3" y="11"/>
+<El x="4" y="10"/>
+<El x="5" y="9"/>
+<El x="6" y="8"/>
+<El x="7" y="7"/>
+<El x="8" y="6"/>
+<El x="9" y="5"/>
+<El x="10" y="4"/>
+<El x="11" y="3"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="3" direction="3" dNum="0">
+<ClueText>Jueves</ClueText>
+<AnswerPos>
+<El x="7" y="11"/>
+<El x="8" y="10"/>
+<El x="9" y="9"/>
+<El x="10" y="8"/>
+<El x="11" y="7"/>
+<El x="12" y="6"/>
+<El x="13" y="5"/>
+<El x="14" y="4"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="4" direction="2" dNum="0">
+<ClueText>Viernes</ClueText>
+<AnswerPos>
+<El x="9" y="2"/>
+<El x="10" y="3"/>
+<El x="11" y="4"/>
+<El x="12" y="5"/>
+<El x="13" y="6"/>
+<El x="14" y="7"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="5" direction="3" dNum="0">
+<ClueText>Sábado</ClueText>
+<AnswerPos>
+<El x="1" y="7"/>
+<El x="2" y="6"/>
+<El x="3" y="5"/>
+<El x="4" y="4"/>
+<El x="5" y="3"/>
+<El x="6" y="2"/>
+<El x="7" y="1"/>
+<El x="8" y="0"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="6" direction="0" dNum="0">
+<ClueText>Domingo</ClueText>
+<AnswerPos>
+<El x="3" y="1"/>
+<El x="4" y="1"/>
+<El x="5" y="1"/>
+<El x="6" y="1"/>
+<El x="7" y="1"/>
+<El x="8" y="1"/>
+</AnswerPos>
+</Pair>
+</Clues>
+<Grid xSize="15" ySize="12" blockSize="22" backdropType="0" backdropColor="0x000000" backdropFileURL="day_of_week_backdrop.jpg" backdropFileWidth="-1" backdropFileHeight="-1" casePolicy="0">
+<El x="0" y="0" ch="C">
+</El>
+<El x="1" y="0" ch="O">
+</El>
+<El x="2" y="0" ch="X">
+</El>
+<El x="3" y="0" ch="M">
+<cNum>0</cNum>
+</El>
+<El x="4" y="0" ch="O">
+<cNum>0</cNum>
+</El>
+<El x="5" y="0" ch="N">
+<cNum>0</cNum>
+</El>
+<El x="6" y="0" ch="D">
+<cNum>0</cNum>
+</El>
+<El x="7" y="0" ch="A">
+<cNum>0</cNum>
+</El>
+<El x="8" y="0" ch="Y">
+<cNum>5</cNum>
+<cNum>0</cNum>
+</El>
+<El x="9" y="0" ch="L">
+</El>
+<El x="10" y="0" ch="R">
+</El>
+<El x="11" y="0" ch="P">
+</El>
+<El x="12" y="0" ch="L">
+</El>
+<El x="13" y="0" ch="H">
+</El>
+<El x="14" y="0" ch="C">
+</El>
+<El x="0" y="1" ch="R">
+</El>
+<El x="1" y="1" ch="X">
+</El>
+<El x="2" y="1" ch="J">
+</El>
+<El x="3" y="1" ch="S">
+<cNum>6</cNum>
+</El>
+<El x="4" y="1" ch="U">
+<cNum>6</cNum>
+</El>
+<El x="5" y="1" ch="N">
+<cNum>6</cNum>
+</El>
+<El x="6" y="1" ch="D">
+<cNum>6</cNum>
+</El>
+<El x="7" y="1" ch="A">
+<cNum>5</cNum>
+<cNum>6</cNum>
+</El>
+<El x="8" y="1" ch="Y">
+<cNum>6</cNum>
+</El>
+<El x="9" y="1" ch="L">
+</El>
+<El x="10" y="1" ch="P">
+</El>
+<El x="11" y="1" ch="N">
+</El>
+<El x="12" y="1" ch="H">
+</El>
+<El x="13" y="1" ch="K">
+</El>
+<El x="14" y="1" ch="H">
+</El>
+<El x="0" y="2" ch="D">
+</El>
+<El x="1" y="2" ch="M">
+</El>
+<El x="2" y="2" ch="J">
+</El>
+<El x="3" y="2" ch="M">
+</El>
+<El x="4" y="2" ch="E">
+</El>
+<El x="5" y="2" ch="A">
+</El>
+<El x="6" y="2" ch="D">
+<cNum>5</cNum>
+</El>
+<El x="7" y="2" ch="Q">
+</El>
+<El x="8" y="2" ch="B">
+</El>
+<El x="9" y="2" ch="F">
+<cNum>4</cNum>
+</El>
+<El x="10" y="2" ch="H">
+</El>
+<El x="11" y="2" ch="S">
+</El>
+<El x="12" y="2" ch="X">
+</El>
+<El x="13" y="2" ch="Q">
+</El>
+<El x="14" y="2" ch="R">
+</El>
+<El x="0" y="3" ch="N">
+</El>
+<El x="1" y="3" ch="R">
+</El>
+<El x="2" y="3" ch="Y">
+</El>
+<El x="3" y="3" ch="P">
+</El>
+<El x="4" y="3" ch="U">
+</El>
+<El x="5" y="3" ch="R">
+<cNum>5</cNum>
+</El>
+<El x="6" y="3" ch="T">
+<cNum>1</cNum>
+</El>
+<El x="7" y="3" ch="E">
+</El>
+<El x="8" y="3" ch="V">
+</El>
+<El x="9" y="3" ch="K">
+</El>
+<El x="10" y="3" ch="R">
+<cNum>4</cNum>
+</El>
+<El x="11" y="3" ch="Y">
+<cNum>2</cNum>
+</El>
+<El x="12" y="3" ch="X">
+</El>
+<El x="13" y="3" ch="P">
+</El>
+<El x="14" y="3" ch="M">
+</El>
+<El x="0" y="4" ch="C">
+</El>
+<El x="1" y="4" ch="B">
+</El>
+<El x="2" y="4" ch="C">
+</El>
+<El x="3" y="4" ch="J">
+</El>
+<El x="4" y="4" ch="U">
+<cNum>5</cNum>
+</El>
+<El x="5" y="4" ch="G">
+</El>
+<El x="6" y="4" ch="S">
+</El>
+<El x="7" y="4" ch="U">
+<cNum>1</cNum>
+</El>
+<El x="8" y="4" ch="E">
+</El>
+<El x="9" y="4" ch="G">
+</El>
+<El x="10" y="4" ch="A">
+<cNum>2</cNum>
+</El>
+<El x="11" y="4" ch="I">
+<cNum>4</cNum>
+</El>
+<El x="12" y="4" ch="N">
+</El>
+<El x="13" y="4" ch="B">
+</El>
+<El x="14" y="4" ch="Y">
+<cNum>3</cNum>
+</El>
+<El x="0" y="5" ch="G">
+</El>
+<El x="1" y="5" ch="S">
+</El>
+<El x="2" y="5" ch="J">
+</El>
+<El x="3" y="5" ch="T">
+<cNum>5</cNum>
+</El>
+<El x="4" y="5" ch="V">
+</El>
+<El x="5" y="5" ch="G">
+</El>
+<El x="6" y="5" ch="Y">
+</El>
+<El x="7" y="5" ch="G">
+</El>
+<El x="8" y="5" ch="E">
+<cNum>1</cNum>
+</El>
+<El x="9" y="5" ch="D">
+<cNum>2</cNum>
+</El>
+<El x="10" y="5" ch="N">
+</El>
+<El x="11" y="5" ch="X">
+</El>
+<El x="12" y="5" ch="D">
+<cNum>4</cNum>
+</El>
+<El x="13" y="5" ch="A">
+<cNum>3</cNum>
+</El>
+<El x="14" y="5" ch="H">
+</El>
+<El x="0" y="6" ch="Y">
+</El>
+<El x="1" y="6" ch="G">
+</El>
+<El x="2" y="6" ch="A">
+<cNum>5</cNum>
+</El>
+<El x="3" y="6" ch="Y">
+</El>
+<El x="4" y="6" ch="F">
+</El>
+<El x="5" y="6" ch="R">
+</El>
+<El x="6" y="6" ch="L">
+</El>
+<El x="7" y="6" ch="S">
+</El>
+<El x="8" y="6" ch="S">
+<cNum>2</cNum>
+</El>
+<El x="9" y="6" ch="S">
+<cNum>1</cNum>
+</El>
+<El x="10" y="6" ch="Y">
+</El>
+<El x="11" y="6" ch="Z">
+</El>
+<El x="12" y="6" ch="D">
+<cNum>3</cNum>
+</El>
+<El x="13" y="6" ch="A">
+<cNum>4</cNum>
+</El>
+<El x="14" y="6" ch="O">
+</El>
+<El x="0" y="7" ch="D">
+</El>
+<El x="1" y="7" ch="S">
+<cNum>5</cNum>
+</El>
+<El x="2" y="7" ch="S">
+</El>
+<El x="3" y="7" ch="E">
+</El>
+<El x="4" y="7" ch="N">
+</El>
+<El x="5" y="7" ch="J">
+</El>
+<El x="6" y="7" ch="X">
+</El>
+<El x="7" y="7" ch="E">
+<cNum>2</cNum>
+</El>
+<El x="8" y="7" ch="U">
+</El>
+<El x="9" y="7" ch="J">
+</El>
+<El x="10" y="7" ch="D">
+<cNum>1</cNum>
+</El>
+<El x="11" y="7" ch="S">
+<cNum>3</cNum>
+</El>
+<El x="12" y="7" ch="I">
+</El>
+<El x="13" y="7" ch="N">
+</El>
+<El x="14" y="7" ch="Y">
+<cNum>4</cNum>
+</El>
+<El x="0" y="8" ch="E">
+</El>
+<El x="1" y="8" ch="X">
+</El>
+<El x="2" y="8" ch="C">
+</El>
+<El x="3" y="8" ch="X">
+</El>
+<El x="4" y="8" ch="Q">
+</El>
+<El x="5" y="8" ch="Q">
+</El>
+<El x="6" y="8" ch="N">
+<cNum>2</cNum>
+</El>
+<El x="7" y="8" ch="G">
+</El>
+<El x="8" y="8" ch="N">
+</El>
+<El x="9" y="8" ch="N">
+</El>
+<El x="10" y="8" ch="R">
+<cNum>3</cNum>
+</El>
+<El x="11" y="8" ch="A">
+<cNum>1</cNum>
+</El>
+<El x="12" y="8" ch="O">
+</El>
+<El x="13" y="8" ch="E">
+</El>
+<El x="14" y="8" ch="X">
+</El>
+<El x="0" y="9" ch="M">
+</El>
+<El x="1" y="9" ch="V">
+</El>
+<El x="2" y="9" ch="X">
+</El>
+<El x="3" y="9" ch="H">
+</El>
+<El x="4" y="9" ch="F">
+</El>
+<El x="5" y="9" ch="D">
+<cNum>2</cNum>
+</El>
+<El x="6" y="9" ch="B">
+</El>
+<El x="7" y="9" ch="D">
+</El>
+<El x="8" y="9" ch="D">
+</El>
+<El x="9" y="9" ch="U">
+<cNum>3</cNum>
+</El>
+<El x="10" y="9" ch="Y">
+</El>
+<El x="11" y="9" ch="R">
+</El>
+<El x="12" y="9" ch="Y">
+<cNum>1</cNum>
+</El>
+<El x="13" y="9" ch="B">
+</El>
+<El x="14" y="9" ch="H">
+</El>
+<El x="0" y="10" ch="U">
+</El>
+<El x="1" y="10" ch="S">
+</El>
+<El x="2" y="10" ch="L">
+</El>
+<El x="3" y="10" ch="Y">
+</El>
+<El x="4" y="10" ch="E">
+<cNum>2</cNum>
+</El>
+<El x="5" y="10" ch="H">
+</El>
+<El x="6" y="10" ch="R">
+</El>
+<El x="7" y="10" ch="F">
+</El>
+<El x="8" y="10" ch="H">
+<cNum>3</cNum>
+</El>
+<El x="9" y="10" ch="W">
+</El>
+<El x="10" y="10" ch="F">
+</El>
+<El x="11" y="10" ch="J">
+</El>
+<El x="12" y="10" ch="Q">
+</El>
+<El x="13" y="10" ch="C">
+</El>
+<El x="14" y="10" ch="C">
+</El>
+<El x="0" y="11" ch="P">
+</El>
+<El x="1" y="11" ch="B">
+</El>
+<El x="2" y="11" ch="V">
+</El>
+<El x="3" y="11" ch="W">
+<cNum>2</cNum>
+</El>
+<El x="4" y="11" ch="Y">
+</El>
+<El x="5" y="11" ch="U">
+</El>
+<El x="6" y="11" ch="Z">
+</El>
+<El x="7" y="11" ch="T">
+<cNum>3</cNum>
+</El>
+<El x="8" y="11" ch="F">
+</El>
+<El x="9" y="11" ch="H">
+</El>
+<El x="10" y="11" ch="J">
+</El>
+<El x="11" y="11" ch="U">
+</El>
+<El x="12" y="11" ch="V">
+</El>
+<El x="13" y="11" ch="S">
+</El>
+<El x="14" y="11" ch="H">
+</El>
+</Grid>
+</CWForgeLiveDoc>

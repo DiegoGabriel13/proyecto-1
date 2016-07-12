@@ -1,0 +1,266 @@
+<!-- saved from url=(0013)about:internet -->
+<html lang="en">
+<head>
+	<title>Day Of week</title>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+		<link rel="stylesheet" href="css/skel-noscript.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Crossword Forge 5.5.8" />
+<title>Day_of_week</title>
+<script language="JavaScript" type="text/javascript">
+// -----------------------------------------------------------------------------
+// Globals
+// Major version of Flash required
+var requiredMajorVersion = 7;
+// Minor version of Flash required
+var requiredMinorVersion = 0;
+// Revision of Flash required
+var requiredRevision = 0;
+// the version of javascript supported
+var jsVersion = 1.0;
+// -----------------------------------------------------------------------------
+// -->
+</script>
+<script language="VBScript" type="text/vbscript">
+<!-- // Visual basic helper required to detect Flash Player ActiveX control version information
+Function VBGetSwfVer(i)
+  on error resume next
+  Dim swControl, swVersion
+  swVersion = 0
+  
+  set swControl = CreateObject("ShockwaveFlash.ShockwaveFlash." + CStr(i))
+  if (IsObject(swControl)) then
+    swVersion = swControl.GetVariable("$version")
+  end if
+  VBGetSwfVer = swVersion
+End Function
+// -->
+</script>
+<script language="JavaScript1.1" type="text/javascript">
+<!-- // Detect Client Browser type
+var isIE  = (navigator.appVersion.indexOf("MSIE") != -1) ? true : false;
+var isWin = (navigator.appVersion.toLowerCase().indexOf("win") != -1) ? true : false;
+var isOpera = (navigator.userAgent.indexOf("Opera") != -1) ? true : false;
+jsVersion = 1.1;
+// JavaScript helper required to detect Flash Player PlugIn version information
+function JSGetSwfVer(i){
+	// NS/Opera version >= 3 check for Flash plugin in plugin array
+	if (navigator.plugins != null && navigator.plugins.length > 0) {
+		if (navigator.plugins["Shockwave Flash 2.0"] || navigator.plugins["Shockwave Flash"]) {
+			var swVer2 = navigator.plugins["Shockwave Flash 2.0"] ? " 2.0" : "";
+      		var flashDescription = navigator.plugins["Shockwave Flash" + swVer2].description;
+			descArray = flashDescription.split(" ");
+			tempArrayMajor = descArray[2].split(".");
+			versionMajor = tempArrayMajor[0];
+			versionMinor = tempArrayMajor[1];
+			if ( descArray[3] != "" ) {
+				tempArrayMinor = descArray[3].split("r");
+			} else {
+				tempArrayMinor = descArray[4].split("r");
+			}
+      		versionRevision = tempArrayMinor[1] > 0 ? tempArrayMinor[1] : 0;
+            flashVer = versionMajor + "." + versionMinor + "." + versionRevision;
+      	} else {
+			flashVer = -1;
+		}
+	}
+	// MSN/WebTV 2.6 supports Flash 4
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.6") != -1) flashVer = 4;
+	// WebTV 2.5 supports Flash 3
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv/2.5") != -1) flashVer = 3;
+	// older WebTV supports Flash 2
+	else if (navigator.userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 2;
+	// Can't detect in all other cases
+	else {
+		
+		flashVer = -1;
+	}
+	return flashVer;
+} 
+// If called with no parameters this function returns a floating point value 
+// which should be the version of the Flash Player or 0.0 
+// ex: Flash Player 7r14 returns 7.14
+// If called with reqMajorVer, reqMinorVer, reqRevision returns true if that version or greater is available
+function DetectFlashVer(reqMajorVer, reqMinorVer, reqRevision) 
+{
+ 	reqVer = parseFloat(reqMajorVer + "." + reqRevision);
+   	// loop backwards through the versions until we find the newest version	
+	for (i=25;i>0;i--) {	
+		if (isIE && isWin && !isOpera) {
+			versionStr = VBGetSwfVer(i);
+		} else {
+			versionStr = JSGetSwfVer(i);		
+		}
+		if (versionStr == -1 ) { 
+			return false;
+		} else if (versionStr != 0) {
+			if(isIE && isWin && !isOpera) {
+				tempArray         = versionStr.split(" ");
+				tempString        = tempArray[1];
+				versionArray      = tempString .split(",");				
+			} else {
+				versionArray      = versionStr.split(".");
+			}
+			versionMajor      = versionArray[0];
+			versionMinor      = versionArray[1];
+			versionRevision   = versionArray[2];
+			
+			versionString     = versionMajor + "." + versionRevision;   // 7.0r24 == 7.24
+			versionNum        = parseFloat(versionString);
+        	// is the major.revision >= requested major.revision AND the minor version >= requested minor
+			if ( (versionMajor > reqMajorVer) && (versionNum >= reqVer) ) {
+				return true;
+			} else {
+				return ((versionNum >= reqVer && versionMinor >= reqMinorVer) ? true : false );	
+			}
+		}
+	}	
+	return (reqVer ? false : 0.0);
+}
+
+function FocusOnFlashContent() {
+	// Set the focus to the flash file.  Seems to work in IE only -- GCC
+	document.cwf_live.focus();
+}
+
+// -->
+</script>
+<!-- GCC - Chose Substitution Back Color as #FFFFFF it's very close to white but isn't likely to occur accidentally, so we can safely replace it
+	 	in CWF.
+	 GCC - Wanted to setup a minimum height for the puzzle.  I do this using a table with a buttress element.
+	 	Although one should be able to use a fixed min-height with in conjunction with 100% for the actual height, this doesn't work on IE,
+	 	it also isn't necessary, table rows will not shrink below the size of the smallest row.  So we set the height of the buttress to be
+	 	the minimum (leave this at 430 so we can substitute it from CWF) and we setup the table to stretch to 100% of the space available.  
+	 	So if the window is big we get more space for the puzzle but if it is small we can get to the parts we want with the scrollbar.
+ -->
+<style type="text/css">
+.buttress {
+  background-color:#FFFFFF;
+  width:1px;
+  height:430;
+}
+</style>
+</head>
+<body bgcolor="#FFFFFF" onLoad="javascript:FocusOnFlashContent();">
+
+	<div id="header">
+	<div class="container">
+<!-- Logo -->
+<div id="logo">
+<h1><a href="#">ENGLISH</a></h1>
+<span>Alphabet Soup</span>
+<span>Day of week</span>
+
+<!-- Nav -->
+<nav id="nav">
+<ul>
+<li><a href="..\proyecto\index.html">Homepage</a></li>
+<li><a href="..\proyecto\modulo1.html">Module One</a></li>
+<li><a href="..\proyecto\modulo2.html">Module Two</a></li>
+<li class="active"><a href="..\proyecto\modulo3.html">Module Three</a></li>
+<li><a href="..\proyecto\modulo4.html">Module Four</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</head>
+<!--url's used in the movie-->
+<!--text used in the movie-->
+<!-- Main -->
+		<div id="main">
+			<div class="container">
+				<div class="row"> 
+
+					<!-- Sidebar -->
+					<div id="sidebar" class="4u">
+						<section>
+							<header>
+								<h2>Games</h2>
+							</header>
+							<ul class="style">					
+								<li>
+									<p class="posted"></p>
+									<h2>Hangman Game</h2>
+									<img src="images\sopa-letras.jpg" alt="" /><br><br><br><br><br><br>
+									<p class="text">This game contains the numbers in English Do you want to look?	</p>
+									<a href="file:///C:/xampp/htdocs/proyecto/modulo3.html">Behind</a>
+										</li>	
+
+								<li>
+						<p class="posted"></p>
+						<h2>Crossword</h2>
+						<img src="images\pic03.jpg" alt="" /><br><br><br><br><br><br>
+						<p class="text">This game contains the numbers in English Do you want to look?	</p>
+						<p><a href="..\proyecto\ModuloTres\day_of_week\sopa3.html"></a></p>
+							</li>													
+							</ul>
+						</section>
+					</div>
+
+					<!-- Content -->
+					<div id="content" class="8u skel-cell-important">
+						<section>
+							<header>
+								<h2>Alphabet Soup</h2>
+								<span class="byline">Serch the words</span>
+
+							</header>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+var hasRightVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+if(hasRightVersion) {  // if we've detected an acceptable version
+    var oeTags = '<table height="100%" width="100%" cellpadding="0" cellspacing="0">'
+    + '<tr><td width="1"><div class="buttress"><\/div><\/td><td width="100%">'
+    + '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"'
+    + 'width="100%" height="100%"'
+    + 'codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">'
+    + '<param name="movie" value="cwf_live.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#FFFFFF" />'
+    + '<embed src="cwf_live.swf" quality="high" bgcolor="#FFFFFF" '
+    + 'width="100%" height="100%" name="cwf_live" align="middle"'
+    + 'play="true"'
+    + 'loop="false"'
+    + 'quality="high"'
+    + 'allowScriptAccess="sameDomain"'
+    + 'type="application/x-shockwave-flash"'
+    + 'pluginspage="http://www.macromedia.com/go/getflashplayer">'
+    + '<\/embed>'
+    + '<\/object>'
+    + '<\/td><\/tr><\/table>';
+    document.write(oeTags);   // embed the flash movie
+  } else {  // flash is too old or we can't detect the plugin
+    var alternateContent = 'This content requires the Macromedia Flash Player 7 or higher.'
+   	+ '<a href=http://www.macromedia.com/go/getflash/>Get Flash</a><br/>';
+    document.write(alternateContent);  // insert non-flash content
+  }
+// -->
+</script>
+<noscript>
+  	<b>Couldn't confirm presence of Flash 7 or higher because JavaScript was disabled.</b><br/>We highly recommend that you install Flash 7 or higher and that you enable JavaScript.<br/>
+  	<a href="http://www.macromedia.com/go/getflash/">Get Flash</a> ---
+  	<a href="cwf_live.swf">I really do have Flash installed.</a><br/>
+  	What follows is a plain HTML version of the puzzle.<br/>
+  	<br/>
+  	&#13;&#13;Day Of Week&#13;&#13;<br/><style type="text/css">td {width: 22; height: 22;}</style><table><tr><td>C</td><td>O</td><td>X</td><td>M</td><td>O</td><td>N</td><td>D</td><td>A</td><td>Y</td><td>R</td><td>X</td><td>J</td><td>L</td><td>P</td><td>N</td></tr><tr><td>H</td><td>K</td><td>H</td><td>S</td><td>U</td><td>N</td><td>D</td><td>A</td><td>Y</td><td>Q</td><td>B</td><td>H</td><td>S</td><td>X</td><td>Q</td></tr><tr><td>R</td><td>N</td><td>R</td><td>Y</td><td>P</td><td>U</td><td>D</td><td>V</td><td>K</td><td>F</td><td>P</td><td>M</td><td>C</td><td>B</td><td>C</td></tr><tr><td>J</td><td>G</td><td>S</td><td>E</td><td>G</td><td>R</td><td>T</td><td>G</td><td>S</td><td>J</td><td>R</td><td>Y</td><td>Y</td><td>G</td><td>N</td></tr><tr><td>X</td><td>H</td><td>Y</td><td>G</td><td>U</td><td>F</td><td>R</td><td>U</td><td>S</td><td>Y</td><td>A</td><td>I</td><td>D</td><td>S</td><td>Y</td></tr><tr><td>N</td><td>J</td><td>X</td><td>T</td><td>J</td><td>I</td><td>N</td><td>E</td><td>E</td><td>D</td><td>X</td><td>Q</td><td>D</td><td>A</td><td>N</td></tr><tr><td>N</td><td>O</td><td>A</td><td>X</td><td>M</td><td>V</td><td>X</td><td>H</td><td>S</td><td>S</td><td>D</td><td>D</td><td>D</td><td>A</td><td>B</td></tr><tr><td>H</td><td>S</td><td>S</td><td>L</td><td>Y</td><td>H</td><td>R</td><td>E</td><td>W</td><td>F</td><td>D</td><td>S</td><td>C</td><td>C</td><td>Y</td></tr><tr><td>B</td><td>V</td><td>Y</td><td>U</td><td>Z</td><td>F</td><td>N</td><td>J</td><td>U</td><td>V</td><td>R</td><td>A</td><td>R</td><td>N</td><td>H</td></tr><tr><td>C</td><td>R</td><td>Z</td><td>Q</td><td>Q</td><td>D</td><td>N</td><td>H</td><td>T</td><td>U</td><td>M</td><td>E</td><td>Y</td><td>G</td><td>X</td></tr><tr><td>N</td><td>G</td><td>M</td><td>T</td><td>E</td><td>R</td><td>D</td><td>M</td><td>H</td><td>F</td><td>Q</td><td>P</td><td>R</td><td>L</td><td>X</td></tr><tr><td>Z</td><td>A</td><td>T</td><td>W</td><td>A</td><td>O</td><td>H</td><td>T</td><td>N</td><td>D</td><td>I</td><td>V</td><td>X</td><td>W</td><td>A</td></tr></table>&#13;<br/>&#13;<br/>&#13;<br/>&#13;<br/>1. Lunes&#13;<br/>2. Martes&#13;<br/>3. Miercóles&#13;<br/>4. Jueves&#13;<br/>5. Viernes&#13;<br/>6. Sábado&#13;<br/>7. Domingo&#13;<br/>
+  	<br/>
+
+</noscript>
+<br/>
+<div ><h4>THE  Day Of Week</h4></div>
+  <img src="images\dias.jpg" alt="" />
+               </div>
+
+</body>
+</html>
