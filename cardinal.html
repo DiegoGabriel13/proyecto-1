@@ -35,7 +35,7 @@
 <script>
 	function cambiar(valor) {
 		mensaje.value = valor;		
-		if(mensaje.value == 'first'){			
+		if(mensaje.value == 'First'){			
 			//mensaje.style.color='white';
 			//mensaje.style.backgroundColor='green';		
 			txt_primero.value = "1";			
@@ -51,16 +51,16 @@
 <script>
 	function cambiar2(valor) {	
 		mensaje2.value = valor;		
-		if(mensaje2.value == 'second'){			
-			//mensaje2.style.color='white';
-			//mensaje2.style.backgroundColor='green';	
+		if(mensaje2.value == 'Second'){			
+			mensaje2.style.color='white';
+			mensaje2.style.backgroundColor='green';	
 			txt_segundo.value = "1";			
 		}
 		else{			
 			//alert("Incorrecto");
-			///mensaje.style.background.color='red';
-			///mensaje2.style.color='white';
-			//ensaje2.style.backgroundColor='red';
+			mensaje.style.background.color='red';
+			mensaje2.style.color='white';
+			mensaje2.style.backgroundColor='red';
 			txt_segundo.value = "0";			
 		}	
 	}
@@ -68,7 +68,7 @@
 <script>
 	function cambiar3(valor) {
 		mensaje3.value = valor;		
-		if(mensaje3.value == 'third'){				
+		if(mensaje3.value == 'Third'){				
 			///mensaje3.style.color='white';
 			///mensaje3.style.backgroundColor='green'	
 			txt_tercero.value ="1";		
@@ -84,7 +84,7 @@
 <script>
 	function cambiar4(valor) {
 		mensaje4.value = valor;		
-		if(mensaje4.value == 'fourth'){			
+		if(mensaje4.value == 'Fourth'){			
 			///mensaje4.style.color='white';
 			///mensaje4.style.backgroundColor='green';	
 			txt_cuarto.value ="1";
@@ -99,7 +99,7 @@
 <script>
 	function cambiar5(valor) {
 		mensaje5.value = valor;
-	if(mensaje5.value == 'fifth'){			
+	if(mensaje5.value == 'Fifth'){			
 			///mensaje5.style.color='white';
 			///mensaje5.style.backgroundColor='green';
 			txt_quinto.value ="1";
@@ -111,10 +111,11 @@
 		}	
 	}
 </script>
+
 <script>
 	function cambiar6(valor) {
 			mensaje6.value = valor;		
-		if(mensaje6.value == 'sixth'){			
+		if(mensaje6.value == 'Sixth'){			
 			//mensaje6.style.color='white';
 			//mensaje6.style.backgroundColor='green';
 			txt_sexto.value ="1";
@@ -127,10 +128,11 @@
 		}	
 	}
 </script>
+
 <script>
 	function cambiar7(valor) {	
 		mensaje7.value = valor
-	if(mensaje7.value == 'seventh'){			
+	if(mensaje7.value == 'Seventh'){			
 			//mensaje7.style.color='white';
 			///mensaje7.style.backgroundColor='green';
 			txt_septimo.value ="1";		
@@ -146,7 +148,7 @@
 <script>
 	function cambiar8(valor) {	
 		mensaje8.value = valor;		
-		if(mensaje8.value == 'eightth'){			
+		if(mensaje8.value == 'Eightth'){			
 			//mensaje8.style.color='white';
 			///mensaje8.style.backgroundColor='green';
 			txt_octavo.value ="1";		
@@ -162,7 +164,7 @@
 <script>
 	function cambiar9(valor) {	
 		mensaje9.value = valor;		
-		if(mensaje9.value == 'ninth'){			
+		if(mensaje9.value == 'Ninth'){			
 			///mensaje9.style.color='white';
 			///mensaje9.style.backgroundColor='green';
 			txt_noveno.value ="1";			
@@ -181,7 +183,7 @@
 <script>
 	function cambiar10(valor) {
 			mensaje10.value = valor;		
-		if(mensaje10.value == 'tenth'){			
+		if(mensaje10.value == 'Tenth'){			
 			///mensaje10.style.color='white';
 			//mensaje10.style.backgroundColor='green';
 			txt_decimo.value ="1";
@@ -199,7 +201,7 @@
 <script>
 	function cambiar11(valor) {	
 		mensaje11.value = valor;		
-		if(mensaje11.value == 'twentieth'){					///mensaje11.style.color='white';
+		if(mensaje11.value == 'Twentieth'){					///mensaje11.style.color='white';
 			///mensaje11.style.backgroundColor='green';
 			txt_veinte.value ="1";			
 			
@@ -215,7 +217,7 @@
 <script>
 	function cambiar12(valor) {	
 		mensaje12.value = valor;		
-		if(mensaje12.value == 'hundredth'){					///mensaje11.style.color='white';
+		if(mensaje12.value == 'Hundredth'){					///mensaje11.style.color='white';
 			///mensaje11.style.backgroundColor='green';
 			txt_cien.value ="1";			
 			
@@ -294,8 +296,8 @@ function muestra_imagen(img) {
 	if(txt_primero.value == "0"){	
 		contenedor_uno.src ="images/x.jpg";		
 	}
+
 	//////dos///
-	
 	if(txt_segundo.value == "1"){			
 		contenedor_dos.src ="images/b.jpg";		
 				
@@ -337,108 +339,101 @@ function muestra_imagen(img) {
 	
 	///cinco
 	
- if(txt_quinto.value== "1"){			
+	 if(txt_quinto.value== "1"){			
 		contenedor_cinco.src ="images/b.jpg";	
-	}
-	if(txt_quinto.value == "0"){			
+		}
+		if(txt_quinto.value == "0"){			
 		contenedor_cinco.src ="images/x.jpg";				
-	}
+		}
 	///seis
 	
- if(txt_sexto.value== "1"){		
-		contenedor_seis.src ="images/b.jpg";	
-	}
+ 		if(txt_sexto.value== "1"){		
+			contenedor_seis.src ="images/b.jpg";	
+		}
 	
 	
-	if(txt_sexto.value == "0"){			
-		contenedor_seis.src ="images/x.jpg";	
+		if(txt_sexto.value == "0"){			
+			contenedor_seis.src ="images/x.jpg";	
 		
-	}
+		}
 	
 	///contenedor_siete//	
 	
- if(txt_septimo.value== "1"){	
+ 		if(txt_septimo.value== "1"){	
 		
-		contenedor_siete.src ="images/b.jpg";		
-	}
+			contenedor_siete.src ="images/b.jpg";		
+		}
 	
-	if(txt_septimo.value == "0"){	
+		if(txt_septimo.value == "0"){	
 		
-		contenedor_siete.src ="images/x.jpg";		
+			contenedor_siete.src ="images/x.jpg";		
 		
-	}
+		}
 	///contenedor_ocho//
 	
- if(txt_octavo.value== "1"){	
-		
-		contenedor_ocho.src ="images/b.jpg";		
-				
-	
-	}
+ 		if(txt_octavo.value== "1"){	
+			
+			contenedor_ocho.src ="images/b.jpg";		
+			}
 	
 	
-	if(txt_octavo.value == "0"){	
+		if(txt_octavo.value == "0"){	
 		
-		contenedor_ocho.src ="images/x.jpg";		
+				contenedor_ocho.src ="images/x.jpg";		
 		
-	}
+		}
 	
 	///contenedos_nueve
 	
- if( txt_noveno.value== "1"){	
+ 		if( txt_noveno.value== "1"){	
 		
-		contenedor_nueve.src ="images/b.jpg";		
-				
-	
-	}
+			contenedor_nueve.src ="images/b.jpg";		
+			}
 	
 	
-	if( txt_noveno.value == "0"){	
+		if( txt_noveno.value == "0"){	
 		
-		contenedor_nueve.src ="images/x.jpg";		
+			contenedor_nueve.src ="images/x.jpg";		
 		
-	}
+		}
 	
 	
 	///contenedor_diez
 	
- 		if( txt_decimo.value== "1"){	
+ 			if( txt_decimo.value== "1"){	
 		
-		contenedor_diez.src ="images/b.jpg";		
-				
-	
-		}
+			contenedor_diez.src ="images/b.jpg";		
+				}
 	
 	
-		if(txt_decimo.value == "0"){	
-		contenedor_diez.src ="images/x.jpg";		
+			if(txt_decimo.value == "0"){	
+			contenedor_diez.src ="images/x.jpg";		
 		
-		}
+				}
 	
 	
 		///contenedor_once
 	
-		if(txt_veinte.value== "1"){	
+				if(txt_veinte.value== "1"){	
 		
-		contenedor_once.src ="images/b.jpg";		
+			contenedor_once.src ="images/b.jpg";		
 					
+				}
 		
-		}
 		
-		
-		if(  txt_veinte.value == "0"){	
-			contenedor_once.src ="images/x.jpg";		
-			
-		}
-		
-		///contenedor_doce
-		
-		if(  txt_cien.value == "1"){	
-			
-			contendor_doce.src ="images/b.jpg";		
-						
+			if(  txt_veinte.value == "0"){	
+				contenedor_once.src ="images/x.jpg";		
 			
 			}
+		
+		///contenedor_doce
+			
+			if(  txt_cien.value == "1"){	
+			
+				contendor_doce.src ="images/b.jpg";		
+						
+			
+				}	
 			
 			
 			if(  txt_cien.value == "0"){	
@@ -495,19 +490,19 @@ function solucion() {
 	
 	
 	alert("Solucion_Encontrada");
-	mensaje.value = "first";
-
-	mensaje2.value = "second";
-	mensaje3.value = "third";
-	mensaje4.value = "fourth";
-	mensaje5.value = "fifth";
-	mensaje6.value = "sixth";
-	mensaje7.value = "seventh";
-	mensaje8.value = "eighth";
-	mensaje9.value = "ninth";
-	mensaje10.value = "tenth";
-	mensaje11.value = "twentieth";
-	mensaje12.value = "hundredth";
+	
+	mensaje.value = "First";
+	mensaje2.value = "Second";
+	mensaje3.value = "Third";
+	mensaje4.value = "Fourth";
+	mensaje5.value = "Fifth";
+	mensaje6.value = "Sixth";
+	mensaje7.value = "Seventh";
+	mensaje8.value = "Eighth";
+	mensaje9.value = "Ninth";
+	mensaje10.value = "Tenth";
+	mensaje11.value = "Twentieth";
+	mensaje12.value = "Hundredth";
 
 
 }
@@ -598,7 +593,7 @@ function solucion() {
       
 		<option value="Onthe">Onthe</option>
 		<option value="Uno">Uno</option>
-		<option value="first">First</option>
+		<option value="First">First</option>
 		<option value="Segundo">Segundo</option>
 	</select>
 	<p>
@@ -620,7 +615,7 @@ function solucion() {
       
 		<option value="Two">Two</option>
 		<option value="Twe">Twe</option>
-		<option value="second">Second</option>
+		<option value="Second">Second</option>
 		<option value="Segundo">Segundo</option>
 	</select>
 	<p>
@@ -638,7 +633,7 @@ function solucion() {
 	<img src="images/3.jpg" width="140px;" height="133px;"><p><p>
 
 <select onchange="cambiar3(this.value);"  class="con_estilos" >
-		<option value="third">Trird</option>
+		<option value="Third">Trird</option>
 		<option value="Thirtenn">Thirtenn</option>
 		<option value="Tres">Tres</option>
 		<option value="thirdth">Thirdth</option>
@@ -661,7 +656,7 @@ function solucion() {
 	<select onchange="cambiar4(this.value);" class="con_estilos" >
 		<option value="Fort">Fort</option>
 		<option value="Cuatro">Cuatro</option>
-		<option value="fourth">Fourth</option>
+		<option value="Fourth">Fourth</option>
 		<option value="Four">Four</option>
 		
 	</select>
@@ -681,12 +676,13 @@ function solucion() {
 		<option value="Fiveth">Fiveth</option>
 		<option value="Cincos">Cincos</option>
 		<option value="Five">Five</option>
-		<option value="fifth">Fifth</option>
+		<option value="Fifth">Fifth</option>
 	</select>
 	<p><p>
 	<input type="text" style="width: 70px; text-align: center;" id="mensaje5" onkeypress="return validar_letras(event), solonumeros(this)" >
 		
-	
+	<img  src="" width="40px;" id="contenedor_cinco">
+
 	<input type="hidden"  style="width: 10px;" id="txt_quinto" value="0" >
 </td>
 <!---FIN---->	
@@ -698,7 +694,7 @@ function solucion() {
 	<select onchange="cambiar6(this.value);" class="con_estilos" >
 		<option value="Sisth">Sisth</option>
 		<option value="Six">Six</option>
-		<option value="sixth">Sixth</option>
+		<option value="Sixth">Sixth</option>
 		<option value="Seis">Seis</option>
 		
 	</select>
@@ -726,7 +722,7 @@ function solucion() {
 <p><p>
 <select onchange="cambiar7(this.value);" class="con_estilos">
 		<option value="Siete">Siete</option>
-		<option value="sevent">Seventh</option>
+		<option value="Seventh">Seventh</option>
 		<option value="Seven">Seven</option>
 	     <option value="Septimo">Septimo</option>
 		
@@ -744,7 +740,7 @@ function solucion() {
 <select onchange="cambiar8(this.value);" class="con_estilos">
 		<option value="Eigth">Eigth</option>
 		<option value="Ocho">Ocho</option>
-		<option value="eighth">Eightth</option>
+		<option value="Eightth">Eightth</option>
 	    <option value="Octavo">Octavo</option>
 	</select>
 	<p><p>
@@ -758,7 +754,7 @@ function solucion() {
 
 <p><p>
 <select onchange="cambiar9(this.value);" class="con_estilos" >
-		<option value="ninth">Ninth</option>
+		<option value="Ninth">Ninth</option>
 		<option value="Nine">Nine</option>
 		<option value="Noveno">Noveno</option>
 	    <option value="IX">IX</option>
@@ -777,7 +773,7 @@ function solucion() {
 <p><p>
 <select onchange="cambiar10(this.value);" class="con_estilos" >
 		<option value="Teenth">Teenth</option>
-		<option value="tenth">Tenth</option>
+		<option value="Tenth">Tenth</option>
 	    <option value="Ten">Ten</option>
 		<option value="Decimo">Decimo</option>
 	</select>
@@ -795,7 +791,7 @@ function solucion() {
 		<option value="Veinte">Veinte</option>
 		<option value="Hundred">Hundred</option>
 	    <option value="Ten">Ten</option>
-		<option value="twentieth">Twentieth</option>
+		<option value="Twentieth">Twentieth</option>
 	</select>
 	<p><p>
 	<input type="text" style="width: 70px; text-align: center;" id="mensaje11" onkeypress="return validar_letras(event), solonumeros(this)" >
@@ -813,7 +809,7 @@ function solucion() {
 <select onchange="cambiar12(this.value);" class="con_estilos" >
 
 
-		<option value="hundredth">Hundredth</option>
+		<option value="Hundredth">Hundredth</option>
 		<option value="Cientos">Cientos</option>
 	    <option value="Hundred">Hundred</option>
 		<option value="One Hundred">One Hundred</option>
