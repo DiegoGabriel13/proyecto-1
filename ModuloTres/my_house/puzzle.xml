@@ -1,0 +1,360 @@
+<?xml version="1.0"?>
+<CWForgeLiveDoc version="5.5.8" suggestedCWFLVersion="1" puzzleType="Crossword" gridWordCount="12" license="esM">
+<Title tNum="0" align="center">
+<Text>&#13;My House</Text>
+<Style font="Helvetica" size="18" color="0x000000" bold="" italic="" underline=""/>
+</Title>
+<Title tNum="1" align="right">
+<Text>...</Text>
+<Style font="Helvetica" size="14" color="0x000000" bold="" italic="" underline=""/>
+</Title>
+<Locale>
+<Alphabet>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</Alphabet>
+<AcrossText>Across</AcrossText>
+<DownText>Down</DownText>
+<WordSearchLabelText></WordSearchLabelText>
+<AboutCWFLiveText>Powered by Crossword Forge...</AboutCWFLiveText>
+<CreateYourOwnPuzzleText>Want to make crossword puzzles?</CreateYourOwnPuzzleText>
+<InputAlphabetText>Input Alphabet</InputAlphabetText>
+<GameText>Game</GameText>
+<RestartText>Restart</RestartText>
+<PrintText>Print...</PrintText>
+<HintText>Hint</HintText>
+<CheckText>Check</CheckText>
+<ShowCurrentLetterText>Show Current Letter</ShowCurrentLetterText>
+<ShowCurrentWordText>Show Current Word</ShowCurrentWordText>
+<ShowEveryWordText>Show Every Word</ShowEveryWordText>
+<CheckCurrentLetterText>Check Current Letter</CheckCurrentLetterText>
+<CheckCurrentWordText>Check Current Word</CheckCurrentWordText>
+<CheckEveryWordText>Check Every Word</CheckEveryWordText>
+<RemainingText>Remaining</RemainingText>
+<CongratulationsText>Congratulations.&#13;You've Won!</CongratulationsText>
+</Locale>
+<Name>My_house</Name>
+<Settings>
+<ClueFont>Helvetica</ClueFont>
+<AnswerFont>Helvetica</AnswerFont>
+<ClueColor>0x000000</ClueColor>
+<AnswerColor>0x000000</AnswerColor>
+<ClueSize>12</ClueSize>
+<AnswerSize>12</AnswerSize>
+<HintLetterLimit>-1</HintLetterLimit>
+<HintAnswerLimit>-1</HintAnswerLimit>
+<HintAllLimit>-1</HintAllLimit>
+<CheckLetterLimit>-1</CheckLetterLimit>
+<CheckAnswerLimit>-1</CheckAnswerLimit>
+<CheckAllLimit>-1</CheckAllLimit>
+<HideClues></HideClues>
+<UseClueAccordion>1</UseClueAccordion>
+<ClueListPosition>right</ClueListPosition>
+<HypeLevel>2</HypeLevel>
+<PageColor>0xFFFFFF</PageColor>
+<ControlColor>0x6FA8FF</ControlColor>
+</Settings>
+<Clues>
+<Pair cNum="0" direction="1" dNum="1">
+<ClueText>Balcon</ClueText>
+<AnswerPos>
+<El x="17" y="2"/>
+<El x="17" y="3"/>
+<El x="17" y="4"/>
+<El x="17" y="5"/>
+<El x="17" y="6"/>
+<El x="17" y="7"/>
+<El x="17" y="8"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="1" direction="1" dNum="2">
+<ClueText>Plancha</ClueText>
+<AnswerPos>
+<El x="19" y="2"/>
+<El x="19" y="3"/>
+<El x="19" y="4"/>
+<El x="19" y="5"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="2" direction="0" dNum="3">
+<ClueText>Almohada</ClueText>
+<AnswerPos>
+<El x="15" y="4"/>
+<El x="16" y="4"/>
+<El x="17" y="4"/>
+<El x="18" y="4"/>
+<El x="19" y="4"/>
+<El x="20" y="4"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="3" direction="1" dNum="4">
+<ClueText>Colchon</ClueText>
+<AnswerPos>
+<El x="8" y="5"/>
+<El x="8" y="6"/>
+<El x="8" y="7"/>
+<El x="8" y="8"/>
+<El x="8" y="9"/>
+<El x="8" y="10"/>
+<El x="8" y="11"/>
+<El x="8" y="12"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="4" direction="1" dNum="5">
+<ClueText>Baño</ClueText>
+<AnswerPos>
+<El x="14" y="5"/>
+<El x="14" y="6"/>
+<El x="14" y="7"/>
+<El x="14" y="8"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="5" direction="0" dNum="6">
+<ClueText>Silla</ClueText>
+<AnswerPos>
+<El x="6" y="6"/>
+<El x="7" y="6"/>
+<El x="8" y="6"/>
+<El x="9" y="6"/>
+<El x="10" y="6"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="6" direction="1" dNum="7">
+<ClueText>Armario</ClueText>
+<AnswerPos>
+<El x="11" y="7"/>
+<El x="11" y="8"/>
+<El x="11" y="9"/>
+<El x="11" y="10"/>
+<El x="11" y="11"/>
+<El x="11" y="12"/>
+<El x="11" y="13"/>
+<El x="11" y="14"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="7" direction="0" dNum="7">
+<ClueText>Cortinas</ClueText>
+<AnswerPos>
+<El x="11" y="7"/>
+<El x="12" y="7"/>
+<El x="13" y="7"/>
+<El x="14" y="7"/>
+<El x="15" y="7"/>
+<El x="16" y="7"/>
+<El x="17" y="7"/>
+<El x="18" y="7"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="8" direction="0" dNum="8">
+<ClueText>Sábana</ClueText>
+<AnswerPos>
+<El x="4" y="8"/>
+<El x="5" y="8"/>
+<El x="6" y="8"/>
+<El x="7" y="8"/>
+<El x="8" y="8"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="9" direction="0" dNum="9">
+<ClueText>Cama</ClueText>
+<AnswerPos>
+<El x="7" y="10"/>
+<El x="8" y="10"/>
+<El x="9" y="10"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="10" direction="0" dNum="10">
+<ClueText>Sofa</ClueText>
+<AnswerPos>
+<El x="8" y="12"/>
+<El x="9" y="12"/>
+<El x="10" y="12"/>
+<El x="11" y="12"/>
+</AnswerPos>
+</Pair>
+<Pair cNum="11" direction="0" dNum="11">
+<ClueText>Patio</ClueText>
+<AnswerPos>
+<El x="8" y="14"/>
+<El x="9" y="14"/>
+<El x="10" y="14"/>
+<El x="11" y="14"/>
+</AnswerPos>
+</Pair>
+</Clues>
+<Grid xSize="25" ySize="17" blockSize="22" backdropType="1" backdropColor="0xAEAEFF" backdropFileURL="my_house_backdrop.jpg" backdropFileWidth="-1" backdropFileHeight="-1" casePolicy="0">
+<El x="17" y="2" ch="B" dNum="1">
+<cNum>0</cNum>
+</El>
+<El x="19" y="2" ch="I" dNum="2">
+<cNum>1</cNum>
+</El>
+<El x="17" y="3" ch="A">
+<cNum>0</cNum>
+</El>
+<El x="19" y="3" ch="R">
+<cNum>1</cNum>
+</El>
+<El x="15" y="4" ch="P" dNum="3">
+<cNum>2</cNum>
+</El>
+<El x="16" y="4" ch="I">
+<cNum>2</cNum>
+</El>
+<El x="17" y="4" ch="L">
+<cNum>0</cNum>
+<cNum>2</cNum>
+</El>
+<El x="18" y="4" ch="L">
+<cNum>2</cNum>
+</El>
+<El x="19" y="4" ch="O">
+<cNum>2</cNum>
+<cNum>1</cNum>
+</El>
+<El x="20" y="4" ch="W">
+<cNum>2</cNum>
+</El>
+<El x="8" y="5" ch="M" dNum="4">
+<cNum>3</cNum>
+</El>
+<El x="14" y="5" ch="B" dNum="5">
+<cNum>4</cNum>
+</El>
+<El x="17" y="5" ch="C">
+<cNum>0</cNum>
+</El>
+<El x="19" y="5" ch="N">
+<cNum>1</cNum>
+</El>
+<El x="6" y="6" ch="C" dNum="6">
+<cNum>5</cNum>
+</El>
+<El x="7" y="6" ch="H">
+<cNum>5</cNum>
+</El>
+<El x="8" y="6" ch="A">
+<cNum>3</cNum>
+<cNum>5</cNum>
+</El>
+<El x="9" y="6" ch="I">
+<cNum>5</cNum>
+</El>
+<El x="10" y="6" ch="R">
+<cNum>5</cNum>
+</El>
+<El x="14" y="6" ch="A">
+<cNum>4</cNum>
+</El>
+<El x="17" y="6" ch="O">
+<cNum>0</cNum>
+</El>
+<El x="8" y="7" ch="T">
+<cNum>3</cNum>
+</El>
+<El x="11" y="7" ch="C" dNum="7">
+<cNum>6</cNum>
+<cNum>7</cNum>
+</El>
+<El x="12" y="7" ch="U">
+<cNum>7</cNum>
+</El>
+<El x="13" y="7" ch="R">
+<cNum>7</cNum>
+</El>
+<El x="14" y="7" ch="T">
+<cNum>7</cNum>
+<cNum>4</cNum>
+</El>
+<El x="15" y="7" ch="A">
+<cNum>7</cNum>
+</El>
+<El x="16" y="7" ch="I">
+<cNum>7</cNum>
+</El>
+<El x="17" y="7" ch="N">
+<cNum>7</cNum>
+<cNum>0</cNum>
+</El>
+<El x="18" y="7" ch="S">
+<cNum>7</cNum>
+</El>
+<El x="4" y="8" ch="S" dNum="8">
+<cNum>8</cNum>
+</El>
+<El x="5" y="8" ch="H">
+<cNum>8</cNum>
+</El>
+<El x="6" y="8" ch="E">
+<cNum>8</cNum>
+</El>
+<El x="7" y="8" ch="E">
+<cNum>8</cNum>
+</El>
+<El x="8" y="8" ch="T">
+<cNum>3</cNum>
+<cNum>8</cNum>
+</El>
+<El x="11" y="8" ch="U">
+<cNum>6</cNum>
+</El>
+<El x="14" y="8" ch="H">
+<cNum>4</cNum>
+</El>
+<El x="17" y="8" ch="Y">
+<cNum>0</cNum>
+</El>
+<El x="8" y="9" ch="R">
+<cNum>3</cNum>
+</El>
+<El x="11" y="9" ch="P">
+<cNum>6</cNum>
+</El>
+<El x="7" y="10" ch="B" dNum="9">
+<cNum>9</cNum>
+</El>
+<El x="8" y="10" ch="E">
+<cNum>3</cNum>
+<cNum>9</cNum>
+</El>
+<El x="9" y="10" ch="B">
+<cNum>9</cNum>
+</El>
+<El x="11" y="10" ch="B">
+<cNum>6</cNum>
+</El>
+<El x="8" y="11" ch="S">
+<cNum>3</cNum>
+</El>
+<El x="11" y="11" ch="O">
+<cNum>6</cNum>
+</El>
+<El x="8" y="12" ch="S" dNum="10">
+<cNum>3</cNum>
+<cNum>10</cNum>
+</El>
+<El x="9" y="12" ch="O">
+<cNum>10</cNum>
+</El>
+<El x="10" y="12" ch="F">
+<cNum>10</cNum>
+</El>
+<El x="11" y="12" ch="A">
+<cNum>10</cNum>
+<cNum>6</cNum>
+</El>
+<El x="11" y="13" ch="R">
+<cNum>6</cNum>
+</El>
+<El x="8" y="14" ch="Y" dNum="11">
+<cNum>11</cNum>
+</El>
+<El x="9" y="14" ch="A">
+<cNum>11</cNum>
+</El>
+<El x="10" y="14" ch="R">
+<cNum>11</cNum>
+</El>
+<El x="11" y="14" ch="D">
+<cNum>6</cNum>
+<cNum>11</cNum>
+</El>
+</Grid>
+</CWForgeLiveDoc>
